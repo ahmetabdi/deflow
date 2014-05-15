@@ -9,7 +9,7 @@ class AppDelegate
     @status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength).init
     @status_item.setMenu(@status_menu)
     @status_item.setHighlightMode(true)
-    @status_item.setTitle('Test')
+    @status_item.setTitle('Deflow')
 
     @status_menu.addItem createMenuItem('Force new wallpaper', 'getWallpaper')
 
@@ -36,8 +36,8 @@ class AppDelegate
   end
 
   def getWallpaper
-    AFMotion::HTTP.get("http://wall.alphacoders.com/api1.0/get.php?auth=23a6f2db69037bdf11a989b02b9c43e3&page=2") do |result|
-      random = Random.new
+    random = Random.new
+    AFMotion::HTTP.get("http://wall.alphacoders.com/api1.0/get.php?auth=23a6f2db69037bdf11a989b02b9c43e3&page=#{random.rand(0..99)}") do |result|
       result_data = BW::JSON.parse("#{result.body}")
       image_url = result_data["wallpapers"][random.rand(0..25)]['url']
       saveImage(image_url)
@@ -63,9 +63,8 @@ class AppDelegate
   end
 
   def createStorageFolder
-    docDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).first
-
-    directory = docDir.stringByAppendingPathComponent("deflow")
+    directory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).first
+    directory = directory.stringByAppendingPathComponent("deflow")
 
     fileManager = NSFileManager.defaultManager
 
@@ -96,7 +95,6 @@ class AppDelegate
         data.writeToFile(directory.stringByAppendingPathComponent(
                                     NSString.stringWithFormat("%@", imgName)),
                                     options:NSAtomicWrite, error: error)
-        puts directory.stringByAppendingPathComponent(NSString.stringWithFormat("%@", imgName))
 
       if (error)
         NSLog("Error Writing File: %@", error)
@@ -111,15 +109,14 @@ class AppDelegate
 
   def deleteAllFiles
     fm = NSFileManager.defaultManager
-
     directory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).first
     directory = directory.stringByAppendingPathComponent("deflow")
     fm.contentsOfDirectoryAtPath(directory, error: nil).each do |file|
         success = fm.removeItemAtPath(NSString.stringWithFormat("%@/%@", directory, file), error: nil)
-        if !success
-          NSLog("Failed to delete file: #{file}")
-        else
+        if success
           NSLog("Successfully deleted file: #{file}")
+        else
+          NSLog("Failed to delete file: #{file}")
         end
     end
   end

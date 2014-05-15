@@ -3,11 +3,15 @@ deflow
 
 Automatically fetches new wallpapers for you.
 
-Available in OS X v10.6 and later.
+Available for OS X v10.6 and later.
+
+* Selectable intervals
+* Selectable screen
+
 
 ## Setup
 
-    $ sudo motion update
-    $ bundle
-    $ pod setup
-    $ bundle exec rake pod:install
+  $ sudo motion update
+  $ bundle
+  $ pod setup
+  $ bundle exec rake pod:install
