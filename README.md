@@ -15,3 +15,9 @@ Available for OS X v10.6 and later.
   $ bundle
   $ pod setup
   $ bundle exec rake pod:install
+  
+  
+  
+# Thanks
+
+![alt tag](https://github.com/ahmetabdi/deflow/blob/master/resources/wallpaper_abyss.png)
