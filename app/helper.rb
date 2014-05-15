@@ -1,0 +1,41 @@
+class Helper
+
+  def self.categories
+    { "abstract" => 1,
+      "animal" => 2,
+      "anime" => 3,
+      "artistic" => 4,
+      "CGI" => 5,
+      "cartoon" => 6,
+      "celebrity" => 7,
+      "comics" => 8,
+      "dark" => 9,
+      "earth" => 10,
+      "fantasy" => 11,
+      "food" => 12,
+      "game" => 13,
+      "holiday" => 14,
+      "humor" => 15,
+      "man made" => 16,
+      "men" => 17,
+      "military" => 18,
+      "misc" => 19,
+      "movie" => 20,
+      "multi monitor" => 21,
+      "music" => 22,
+      "pattern" => 23,
+      "photography" => 24,
+      "products" => 25,
+      "religious" => 26,
+      "sci-fi" => 27,
+      "sports" => 28,
+      "tv-show" => 29,
+      "technology" => 30,
+      "vehicles" => 31,
+      "video game" => 32,
+      "weapons" => 33,
+      "women" => 34,
+    }
+  end
+
+end

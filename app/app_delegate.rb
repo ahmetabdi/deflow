@@ -14,14 +14,18 @@ class AppDelegate
     @status_menu.addItem createMenuItem('Force new wallpaper', 'getWallpaper')
 
     NSScreen.screens.each_with_index do |screen, index|
-      @status_menu.addItem createMenuItem("Use screen #{index}", 'test')
+      @status_menu.addItem createMenuItem("Use screen #{index}", "setScreen:")
     end
     @status_menu.addItem createMenuItem('Quit', 'terminate:')
 
     @config = NSUserDefaults.standardUserDefaults
-    @config['current_image'] = "#{random}.png"
+    @config['current_image'] ||= "#{random}.png"
 
     NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: 'timerGo', userInfo: nil, repeats: true)
+  end
+
+  def setScreen(number)
+    puts "Setting screen #{number}"
   end
 
   def random
@@ -37,7 +41,7 @@ class AppDelegate
 
   def getWallpaper
     random = Random.new
-    AFMotion::HTTP.get("http://wall.alphacoders.com/api1.0/get.php?auth=23a6f2db69037bdf11a989b02b9c43e3&page=#{random.rand(0..99)}") do |result|
+    AFMotion::HTTP.get("http://wall.alphacoders.com/api1.0/get.php?auth=23a6f2db69037bdf11a989b02b9c43e3&page=#{random.rand(0..99)}&category_id=32") do |result|
       result_data = BW::JSON.parse("#{result.body}")
       image_url = result_data["wallpapers"][random.rand(0..25)]['url']
       saveImage(image_url)
