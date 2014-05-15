@@ -1,0 +1,3916 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<struct name='CPParserDelegateResponseCache' type='{_CPParserDelegateResponseCache=&quot;didProduceSyntaxTree&quot;b1&quot;didEncounterErrorOnInput&quot;b1&quot;didEncounterErrorOnInputExpecting&quot;b1}'>
+<field declared_type='unsigned int' name='didProduceSyntaxTree' type='b1'/>
+<field declared_type='unsigned int' name='didEncounterErrorOnInput' type='b1'/>
+<field declared_type='unsigned int' name='didEncounterErrorOnInputExpecting' type='b1'/>
+</struct>
+<constant const='true' declared_type='NSString*' name='AFNetworkingErrorDomain' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingOperationDidFinishNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingOperationDidStartNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingOperationFailingURLRequestErrorKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingOperationFailingURLResponseErrorKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingReachabilityDidChangeNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingReachabilityNotificationStatusItem' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidCompleteAssetPathKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidCompleteErrorKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidCompleteNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidCompleteResponseDataKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidCompleteResponseSerializerKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidCompleteSerializedResponseKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidFinishAssetPathKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidFinishErrorKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidFinishNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidFinishResponseDataKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidFinishResponseSerializerKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidFinishSerializedResponseKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidResumeNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidStartNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFNetworkingTaskDidSuspendNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFURLSessionDidInvalidateNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='AFURLSessionDownloadTaskDidFailToMoveFileNotification' type='@'/>
+<constant const='true' declared_type='NSString*' name='CSSSelectorParserErrorAcceptableTokenKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='CSSSelectorParserErrorDomain' type='@'/>
+<constant const='true' declared_type='NSString*' name='CSSSelectorParserErrorInputStreamKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='CSSSelectorParserException' type='@'/>
+<constant const='true' declared_type='NSString*' name='IGXMLNodeException' type='@'/>
+<constant const='true' declared_type='NSString*' name='IGXMLQueryCSSConversionException' type='@'/>
+<constant const='true' declared_type='NSString*' name='IGXMLQueryErrorDomain' type='@'/>
+<constant const='true' declared_type='NSTimeInterval' name='kAFUploadStream3GSuggestedDelay' type='d'/>
+<constant const='true' declared_type='NSUInteger' name='kAFUploadStream3GSuggestedPacketSize' type='I' type64='Q'/>
+<string_constant name='CPEBNFParserErrorDomain' nsstring='true' value='CPEBNFParserErrorDomain'/>
+<enum name='AFHTTPRequestQueryStringDefaultStyle' value='0'/>
+<enum name='AFNetworkReachabilityStatusNotReachable' value='0'/>
+<enum name='AFNetworkReachabilityStatusReachableViaWWAN' value='1'/>
+<enum name='AFNetworkReachabilityStatusReachableViaWiFi' value='2'/>
+<enum name='AFNetworkReachabilityStatusUnknown' value='-1'/>
+<enum name='AFSSLPinningModeCertificate' value='2'/>
+<enum name='AFSSLPinningModeNone' value='0'/>
+<enum name='AFSSLPinningModePublicKey' value='1'/>
+<enum name='COCOAPODS_VERSION_MAJOR_AFNetworking' value='2'/>
+<enum name='COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLConnection' value='2'/>
+<enum name='COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLSession' value='2'/>
+<enum name='COCOAPODS_VERSION_MAJOR_AFNetworking_Reachability' value='2'/>
+<enum name='COCOAPODS_VERSION_MAJOR_AFNetworking_Security' value='2'/>
+<enum name='COCOAPODS_VERSION_MAJOR_AFNetworking_Serialization' value='2'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CSSSelectorConverter' value='1'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CSSSelectorConverter_Core' value='1'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CSSSelectorConverter_CoreParse' value='1'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CocoaLumberjack' value='1'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CocoaLumberjack_Core' value='1'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CocoaLumberjack_Extensions' value='1'/>
+<enum name='COCOAPODS_VERSION_MAJOR_IGHTMLQuery' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_IGHTMLQuery_Core' value='0'/>
+<enum name='COCOAPODS_VERSION_MINOR_AFNetworking' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_AFNetworking_NSURLConnection' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_AFNetworking_NSURLSession' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_AFNetworking_Reachability' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_AFNetworking_Security' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_AFNetworking_Serialization' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_CSSSelectorConverter' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_CSSSelectorConverter_Core' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_CSSSelectorConverter_CoreParse' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_CocoaLumberjack' value='8'/>
+<enum name='COCOAPODS_VERSION_MINOR_CocoaLumberjack_Core' value='8'/>
+<enum name='COCOAPODS_VERSION_MINOR_CocoaLumberjack_Extensions' value='8'/>
+<enum name='COCOAPODS_VERSION_MINOR_IGHTMLQuery' value='7'/>
+<enum name='COCOAPODS_VERSION_MINOR_IGHTMLQuery_Core' value='7'/>
+<enum name='COCOAPODS_VERSION_PATCH_AFNetworking' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_AFNetworking_NSURLConnection' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_AFNetworking_NSURLSession' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_AFNetworking_Reachability' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_AFNetworking_Security' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_AFNetworking_Serialization' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_CSSSelectorConverter' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_CSSSelectorConverter_Core' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_CSSSelectorConverter_CoreParse' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_CocoaLumberjack' value='1'/>
+<enum name='COCOAPODS_VERSION_PATCH_CocoaLumberjack_Core' value='1'/>
+<enum name='COCOAPODS_VERSION_PATCH_CocoaLumberjack_Extensions' value='1'/>
+<enum name='COCOAPODS_VERSION_PATCH_IGHTMLQuery' value='2'/>
+<enum name='COCOAPODS_VERSION_PATCH_IGHTMLQuery_Core' value='2'/>
+<enum name='CPErrorCodeCouldNotParseEBNF' value='1'/>
+<enum name='CPErrorCodeDuplicateTag' value='2'/>
+<enum name='CPErrorCodeUndefinedNonTerminal' value='3'/>
+<enum name='CPRecoveryTypeAddToken' value='0'/>
+<enum name='CPRecoveryTypeBail' value='2'/>
+<enum name='CPRecoveryTypeRemoveToken' value='1'/>
+<enum name='CSSCombinatorTypeAdjacent' value='2'/>
+<enum name='CSSCombinatorTypeDescendant' value='1'/>
+<enum name='CSSCombinatorTypeGeneralSibling' value='3'/>
+<enum name='CSSCombinatorTypeNone' value='0'/>
+<enum name='CSSSelectorAttributeOperatorTypeDash' value='3'/>
+<enum name='CSSSelectorAttributeOperatorTypeEqual' value='1'/>
+<enum name='CSSSelectorAttributeOperatorTypeIncludes' value='2'/>
+<enum name='CSSSelectorAttributeOperatorTypeNone' value='0'/>
+<enum name='DDLogMessageCopyFile' value='1'/>
+<enum name='DDLogMessageCopyFunction' value='2'/>
+<enum name='DEFAULT_LOG_MAX_FILE_SIZE' value='1048576'/>
+<enum name='DEFAULT_LOG_MAX_NUM_LOG_FILES' value='5'/>
+<enum name='DEFAULT_LOG_ROLLING_FREQUENCY' value='86400'/>
+<enum name='LOG_ASYNC_DEBUG' value='1'/>
+<enum name='LOG_ASYNC_ENABLED' value='1'/>
+<enum name='LOG_ASYNC_ERROR' value='0'/>
+<enum name='LOG_ASYNC_INFO' value='1'/>
+<enum name='LOG_ASYNC_VERBOSE' value='1'/>
+<enum name='LOG_ASYNC_WARN' value='1'/>
+<enum name='LOG_CONTEXT_ALL' value='2147483647'/>
+<enum name='LOG_FLAG_DEBUG' value='8'/>
+<enum name='LOG_FLAG_ERROR' value='1'/>
+<enum name='LOG_FLAG_INFO' value='4'/>
+<enum name='LOG_FLAG_VERBOSE' value='16'/>
+<enum name='LOG_FLAG_WARN' value='2'/>
+<enum name='LOG_LEVEL_DEBUG' value='15'/>
+<enum name='LOG_LEVEL_ERROR' value='1'/>
+<enum name='LOG_LEVEL_INFO' value='7'/>
+<enum name='LOG_LEVEL_OFF' value='0'/>
+<enum name='LOG_LEVEL_VERBOSE' value='31'/>
+<enum name='LOG_LEVEL_WARN' value='3'/>
+<function name='AFStringFromNetworkReachabilityStatus'>
+<arg declared_type='AFNetworkReachabilityStatus' name='status' type='i' type64='q'/>
+<retval declared_type='NSString*' type='@'/>
+</function>
+<function name='DDExtractFileNameWithoutExtension'>
+<arg const='true' declared_type='char*' name='filePath' type='*'/>
+<arg declared_type='BOOL' name='copy' type='B'/>
+<retval declared_type='NSString*' type='@'/>
+</function>
+<class name='AFCompoundResponseSerializer'>
+<method class_method='true' selector='compoundSerializerWithResponseSerializers:'>
+<arg declared_type='NSArray*' index='0' name='responseSerializers' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='responseSerializers'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+</class>
+<class name='AFHTTPRequestOperation'>
+<method selector='response'>
+<retval declared_type='NSHTTPURLResponse*' type='@'/>
+</method>
+<method selector='responseObject'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='responseSerializer'>
+<retval declared_type='AFHTTPResponseSerializer*' type='@'/>
+</method>
+<method selector='setCompletionBlockWithSuccess:failure:'>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='0' name='success' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='1' name='failure' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setResponseSerializer:'>
+<arg declared_type='AFHTTPResponseSerializer*' index='0' name='responseSerializer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='AFHTTPRequestOperationManager'>
+<method selector='DELETE:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='AFHTTPRequestOperation*' type='@'/>
+</method>
+<method selector='GET:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='AFHTTPRequestOperation*' type='@'/>
+</method>
+<method selector='HEAD:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(AFHTTPRequestOperation *)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='AFHTTPRequestOperation*' type='@'/>
+</method>
+<method selector='HTTPRequestOperationWithRequest:success:failure:'>
+<arg declared_type='NSURLRequest*' index='0' name='request' type='@'/>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='1' name='success' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='2' name='failure' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='AFHTTPRequestOperation*' type='@'/>
+</method>
+<method selector='PATCH:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='AFHTTPRequestOperation*' type='@'/>
+</method>
+<method selector='POST:parameters:constructingBodyWithBlock:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(id)' function_pointer='true' index='2' name='block' type='@?'>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='3' name='success' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='4' name='failure' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='AFHTTPRequestOperation*' type='@'/>
+</method>
+<method selector='POST:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='AFHTTPRequestOperation*' type='@'/>
+</method>
+<method selector='PUT:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, id)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(AFHTTPRequestOperation *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='AFHTTPRequestOperation*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='AFHTTPRequestOperation*' type='@'/>
+</method>
+<method selector='baseURL'>
+<retval declared_type='NSURL*' type='@'/>
+</method>
+<method selector='credential'>
+<retval declared_type='NSURLCredential*' type='@'/>
+</method>
+<method selector='initWithBaseURL:'>
+<arg declared_type='NSURL*' index='0' name='url' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='manager'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='operationQueue'>
+<retval declared_type='NSOperationQueue*' type='@'/>
+</method>
+<method selector='reachabilityManager'>
+<retval declared_type='AFNetworkReachabilityManager*' type='@'/>
+</method>
+<method selector='requestSerializer'>
+<retval declared_type='AFHTTPRequestSerializer*' type='@'/>
+</method>
+<method selector='responseSerializer'>
+<retval declared_type='AFHTTPResponseSerializer*' type='@'/>
+</method>
+<method selector='securityPolicy'>
+<retval declared_type='AFSecurityPolicy*' type='@'/>
+</method>
+<method selector='setCredential:'>
+<arg declared_type='NSURLCredential*' index='0' name='credential' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setOperationQueue:'>
+<arg declared_type='NSOperationQueue*' index='0' name='operationQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRequestSerializer:'>
+<arg declared_type='AFHTTPRequestSerializer*' index='0' name='requestSerializer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setResponseSerializer:'>
+<arg declared_type='AFHTTPResponseSerializer*' index='0' name='responseSerializer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSecurityPolicy:'>
+<arg declared_type='AFSecurityPolicy*' index='0' name='securityPolicy' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldUseCredentialStorage:'>
+<arg declared_type='BOOL' index='0' name='shouldUseCredentialStorage' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shouldUseCredentialStorage'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='AFHTTPRequestSerializer'>
+<method selector='HTTPMethodsEncodingParametersInURI'>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='HTTPRequestHeaders'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='clearAuthorizationHeader'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:'>
+<arg declared_type='NSString*' index='0' name='method' type='@'/>
+<arg declared_type='NSString*' index='1' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='parameters' type='@'/>
+<arg declared_type='void (^)(id)' function_pointer='true' index='3' name='block' type='@?'>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSMutableURLRequest*' type='@'/>
+</method>
+<method selector='multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:error:'>
+<arg declared_type='NSString*' index='0' name='method' type='@'/>
+<arg declared_type='NSString*' index='1' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='parameters' type='@'/>
+<arg declared_type='void (^)(id)' function_pointer='true' index='3' name='block' type='@?'>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='NSError**' index='4' name='error' type='^@'/>
+<retval declared_type='NSMutableURLRequest*' type='@'/>
+</method>
+<method selector='requestWithMethod:URLString:parameters:'>
+<arg declared_type='NSString*' index='0' name='method' type='@'/>
+<arg declared_type='NSString*' index='1' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='parameters' type='@'/>
+<retval declared_type='NSMutableURLRequest*' type='@'/>
+</method>
+<method selector='requestWithMethod:URLString:parameters:error:'>
+<arg declared_type='NSString*' index='0' name='method' type='@'/>
+<arg declared_type='NSString*' index='1' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='parameters' type='@'/>
+<arg declared_type='NSError**' index='3' name='error' type='^@'/>
+<retval declared_type='NSMutableURLRequest*' type='@'/>
+</method>
+<method class_method='true' selector='serializer'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setAuthorizationHeaderFieldWithToken:'>
+<arg declared_type='NSString*' index='0' name='token' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAuthorizationHeaderFieldWithUsername:password:'>
+<arg declared_type='NSString*' index='0' name='username' type='@'/>
+<arg declared_type='NSString*' index='1' name='password' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setHTTPMethodsEncodingParametersInURI:'>
+<arg declared_type='NSSet*' index='0' name='HTTPMethodsEncodingParametersInURI' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setQueryStringSerializationWithBlock:'>
+<arg declared_type='NSString *(^)(NSURLRequest *, NSDictionary *, NSError **)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLRequest*' type='@'/>
+<arg declared_type='NSDictionary*' type='@'/>
+<arg declared_type='NSError**' type='^@'/>
+<retval declared_type='NSString*' type='@'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setQueryStringSerializationWithStyle:'>
+<arg declared_type='AFHTTPRequestQueryStringSerializationStyle' index='0' name='style' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setStringEncoding:'>
+<arg declared_type='NSStringEncoding' index='0' name='stringEncoding' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setValue:forHTTPHeaderField:'>
+<arg declared_type='NSString*' index='0' name='value' type='@'/>
+<arg declared_type='NSString*' index='1' name='field' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stringEncoding'>
+<retval declared_type='NSStringEncoding' type='I' type64='Q'/>
+</method>
+</class>
+<class name='AFHTTPResponseSerializer'>
+<method selector='acceptableContentTypes'>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='acceptableStatusCodes'>
+<retval declared_type='NSIndexSet*' type='@'/>
+</method>
+<method class_method='true' selector='serializer'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setAcceptableContentTypes:'>
+<arg declared_type='NSSet*' index='0' name='acceptableContentTypes' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAcceptableStatusCodes:'>
+<arg declared_type='NSIndexSet*' index='0' name='acceptableStatusCodes' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setStringEncoding:'>
+<arg declared_type='NSStringEncoding' index='0' name='stringEncoding' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stringEncoding'>
+<retval declared_type='NSStringEncoding' type='I' type64='Q'/>
+</method>
+<method selector='validateResponse:data:error:'>
+<arg declared_type='NSHTTPURLResponse*' index='0' name='response' type='@'/>
+<arg declared_type='NSData*' index='1' name='data' type='@'/>
+<arg declared_type='NSError**' index='2' name='error' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='AFHTTPSessionManager'>
+<method selector='DELETE:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(NSURLSessionDataTask *, id)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(NSURLSessionDataTask *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionDataTask*' type='@'/>
+</method>
+<method selector='GET:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(NSURLSessionDataTask *, id)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(NSURLSessionDataTask *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionDataTask*' type='@'/>
+</method>
+<method selector='HEAD:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(NSURLSessionDataTask *)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(NSURLSessionDataTask *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionDataTask*' type='@'/>
+</method>
+<method selector='PATCH:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(NSURLSessionDataTask *, id)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(NSURLSessionDataTask *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionDataTask*' type='@'/>
+</method>
+<method selector='POST:parameters:constructingBodyWithBlock:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(id)' function_pointer='true' index='2' name='block' type='@?'>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(NSURLSessionDataTask *, id)' function_pointer='true' index='3' name='success' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(NSURLSessionDataTask *, NSError *)' function_pointer='true' index='4' name='failure' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionDataTask*' type='@'/>
+</method>
+<method selector='POST:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(NSURLSessionDataTask *, id)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(NSURLSessionDataTask *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionDataTask*' type='@'/>
+</method>
+<method selector='PUT:parameters:success:failure:'>
+<arg declared_type='NSString*' index='0' name='URLString' type='@'/>
+<arg declared_type='NSDictionary*' index='1' name='parameters' type='@'/>
+<arg declared_type='void (^)(NSURLSessionDataTask *, id)' function_pointer='true' index='2' name='success' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='id' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(NSURLSessionDataTask *, NSError *)' function_pointer='true' index='3' name='failure' type='@?'>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionDataTask*' type='@'/>
+</method>
+<method selector='baseURL'>
+<retval declared_type='NSURL*' type='@'/>
+</method>
+<method selector='initWithBaseURL:'>
+<arg declared_type='NSURL*' index='0' name='url' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithBaseURL:sessionConfiguration:'>
+<arg declared_type='NSURL*' index='0' name='url' type='@'/>
+<arg declared_type='NSURLSessionConfiguration*' index='1' name='configuration' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='manager'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='requestSerializer'>
+<retval declared_type='AFHTTPRequestSerializer*' type='@'/>
+</method>
+<method selector='responseSerializer'>
+<retval declared_type='AFHTTPResponseSerializer*' type='@'/>
+</method>
+<method selector='setRequestSerializer:'>
+<arg declared_type='AFHTTPRequestSerializer*' index='0' name='requestSerializer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setResponseSerializer:'>
+<arg declared_type='AFHTTPResponseSerializer*' index='0' name='responseSerializer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='AFJSONRequestSerializer'>
+<method selector='format'>
+<retval declared_type='NSPropertyListFormat' type='I' type64='Q'/>
+</method>
+<method class_method='true' selector='serializerWithWritingOptions:'>
+<arg declared_type='NSJSONWritingOptions' index='0' name='writingOptions' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setFormat:'>
+<arg declared_type='NSPropertyListFormat' index='0' name='format' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWritingOptions:'>
+<arg declared_type='NSJSONWritingOptions' index='0' name='writingOptions' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='writingOptions'>
+<retval declared_type='NSJSONWritingOptions' type='I' type64='Q'/>
+</method>
+</class>
+<class name='AFJSONResponseSerializer'>
+<method selector='readingOptions'>
+<retval declared_type='NSJSONReadingOptions' type='I' type64='Q'/>
+</method>
+<method class_method='true' selector='serializerWithReadingOptions:'>
+<arg declared_type='NSJSONReadingOptions' index='0' name='readingOptions' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setReadingOptions:'>
+<arg declared_type='NSJSONReadingOptions' index='0' name='readingOptions' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='AFNetworkReachabilityManager'>
+<method selector='initWithReachability:'>
+<arg declared_type='SCNetworkReachabilityRef' index='0' name='reachability' type='^{__SCNetworkReachability=}'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isReachable'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isReachableViaWWAN'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isReachableViaWiFi'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='localizedNetworkReachabilityStatusString'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='managerForAddress:'>
+<arg const='true' declared_type='struct sockaddr_in*' index='0' name='address' type='^{sockaddr_in=CCS{in_addr=I}[8c]}'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='managerForDomain:'>
+<arg declared_type='NSString*' index='0' name='domain' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='networkReachabilityStatus'>
+<retval declared_type='AFNetworkReachabilityStatus' type='i' type64='q'/>
+</method>
+<method selector='setReachabilityStatusChangeBlock:'>
+<arg declared_type='void (^)(AFNetworkReachabilityStatus)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='AFNetworkReachabilityStatus' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='sharedManager'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='startMonitoring'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stopMonitoring'>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='AFPropertyListRequestSerializer'>
+<method selector='format'>
+<retval declared_type='NSPropertyListFormat' type='I' type64='Q'/>
+</method>
+<method class_method='true' selector='serializerWithFormat:writeOptions:'>
+<arg declared_type='NSPropertyListFormat' index='0' name='format' type='I' type64='Q'/>
+<arg declared_type='NSPropertyListWriteOptions' index='1' name='writeOptions' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setFormat:'>
+<arg declared_type='NSPropertyListFormat' index='0' name='format' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWriteOptions:'>
+<arg declared_type='NSPropertyListWriteOptions' index='0' name='writeOptions' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='writeOptions'>
+<retval declared_type='NSPropertyListWriteOptions' type='I' type64='Q'/>
+</method>
+</class>
+<class name='AFPropertyListResponseSerializer'>
+<method selector='format'>
+<retval declared_type='NSPropertyListFormat' type='I' type64='Q'/>
+</method>
+<method selector='readOptions'>
+<retval declared_type='NSPropertyListReadOptions' type='I' type64='Q'/>
+</method>
+<method class_method='true' selector='serializerWithFormat:readOptions:'>
+<arg declared_type='NSPropertyListFormat' index='0' name='format' type='I' type64='Q'/>
+<arg declared_type='NSPropertyListReadOptions' index='1' name='readOptions' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setFormat:'>
+<arg declared_type='NSPropertyListFormat' index='0' name='format' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setReadOptions:'>
+<arg declared_type='NSPropertyListReadOptions' index='0' name='readOptions' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='AFSecurityPolicy'>
+<method selector='SSLPinningMode'>
+<retval declared_type='AFSSLPinningMode' type='I' type64='Q'/>
+</method>
+<method selector='allowInvalidCertificates'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='defaultPolicy'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='evaluateServerTrust:'>
+<arg declared_type='SecTrustRef' index='0' name='serverTrust' type='^{__SecTrust=}'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='evaluateServerTrust:forDomain:'>
+<arg declared_type='SecTrustRef' index='0' name='serverTrust' type='^{__SecTrust=}'/>
+<arg declared_type='NSString*' index='1' name='domain' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='pinnedCertificates'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method class_method='true' selector='policyWithPinningMode:'>
+<arg declared_type='AFSSLPinningMode' index='0' name='pinningMode' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setAllowInvalidCertificates:'>
+<arg declared_type='BOOL' index='0' name='allowInvalidCertificates' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPinnedCertificates:'>
+<arg declared_type='NSArray*' index='0' name='pinnedCertificates' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSSLPinningMode:'>
+<arg declared_type='AFSSLPinningMode' index='0' name='SSLPinningMode' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setValidatesCertificateChain:'>
+<arg declared_type='BOOL' index='0' name='validatesCertificateChain' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setValidatesDomainName:'>
+<arg declared_type='BOOL' index='0' name='validatesDomainName' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='validatesCertificateChain'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='validatesDomainName'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='AFURLConnectionOperation'>
+<method class_method='true' selector='batchOfRequestOperations:progressBlock:completionBlock:'>
+<arg declared_type='NSArray*' index='0' name='operations' type='@'/>
+<arg declared_type='void (^)(NSUInteger, NSUInteger)' function_pointer='true' index='1' name='progressBlock' type='@?'>
+<arg declared_type='NSUInteger' type='I' type64='Q'/>
+<arg declared_type='NSUInteger' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='void (^)(NSArray *)' function_pointer='true' index='2' name='completionBlock' type='@?'>
+<arg declared_type='NSArray*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='completionGroup'>
+<retval declared_type='dispatch_group_t' type='@'/>
+</method>
+<method selector='completionQueue'>
+<retval declared_type='dispatch_queue_t' type='@'/>
+</method>
+<method selector='credential'>
+<retval declared_type='NSURLCredential*' type='@'/>
+</method>
+<method selector='error'>
+<retval declared_type='NSError*' type='@'/>
+</method>
+<method selector='initWithRequest:'>
+<arg declared_type='NSURLRequest*' index='0' name='urlRequest' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='inputStream'>
+<retval declared_type='NSInputStream*' type='@'/>
+</method>
+<method selector='isPaused'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='outputStream'>
+<retval declared_type='NSOutputStream*' type='@'/>
+</method>
+<method selector='pause'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='request'>
+<retval declared_type='NSURLRequest*' type='@'/>
+</method>
+<method selector='response'>
+<retval declared_type='NSURLResponse*' type='@'/>
+</method>
+<method selector='responseData'>
+<retval declared_type='NSData*' type='@'/>
+</method>
+<method selector='responseString'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='responseStringEncoding'>
+<retval declared_type='NSStringEncoding' type='I' type64='Q'/>
+</method>
+<method selector='resume'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='runLoopModes'>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='securityPolicy'>
+<retval declared_type='AFSecurityPolicy*' type='@'/>
+</method>
+<method selector='setCacheResponseBlock:'>
+<arg declared_type='NSCachedURLResponse *(^)(NSURLConnection *, NSCachedURLResponse *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLConnection*' type='@'/>
+<arg declared_type='NSCachedURLResponse*' type='@'/>
+<retval declared_type='NSCachedURLResponse*' type='@'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCompletionGroup:'>
+<arg declared_type='dispatch_group_t' index='0' name='completionGroup' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCompletionQueue:'>
+<arg declared_type='dispatch_queue_t' index='0' name='completionQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCredential:'>
+<arg declared_type='NSURLCredential*' index='0' name='credential' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDownloadProgressBlock:'>
+<arg declared_type='void (^)(NSUInteger, long long, long long)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSUInteger' type='I' type64='Q'/>
+<arg declared_type='long long' type='q'/>
+<arg declared_type='long long' type='q'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setInputStream:'>
+<arg declared_type='NSInputStream*' index='0' name='inputStream' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setOutputStream:'>
+<arg declared_type='NSOutputStream*' index='0' name='outputStream' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRedirectResponseBlock:'>
+<arg declared_type='NSURLRequest *(^)(NSURLConnection *, NSURLRequest *, NSURLResponse *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLConnection*' type='@'/>
+<arg declared_type='NSURLRequest*' type='@'/>
+<arg declared_type='NSURLResponse*' type='@'/>
+<retval declared_type='NSURLRequest*' type='@'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRunLoopModes:'>
+<arg declared_type='NSSet*' index='0' name='runLoopModes' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSecurityPolicy:'>
+<arg declared_type='AFSecurityPolicy*' index='0' name='securityPolicy' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldUseCredentialStorage:'>
+<arg declared_type='BOOL' index='0' name='shouldUseCredentialStorage' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUploadProgressBlock:'>
+<arg declared_type='void (^)(NSUInteger, long long, long long)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSUInteger' type='I' type64='Q'/>
+<arg declared_type='long long' type='q'/>
+<arg declared_type='long long' type='q'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUserInfo:'>
+<arg declared_type='NSDictionary*' index='0' name='userInfo' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setWillSendRequestForAuthenticationChallengeBlock:'>
+<arg declared_type='void (^)(NSURLConnection *, NSURLAuthenticationChallenge *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLConnection*' type='@'/>
+<arg declared_type='NSURLAuthenticationChallenge*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shouldUseCredentialStorage'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='userInfo'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+</class>
+<class name='AFURLSessionManager'>
+<method selector='completionGroup'>
+<retval declared_type='dispatch_group_t' type='@'/>
+</method>
+<method selector='completionQueue'>
+<retval declared_type='dispatch_queue_t' type='@'/>
+</method>
+<method selector='dataTaskWithRequest:completionHandler:'>
+<arg declared_type='NSURLRequest*' index='0' name='request' type='@'/>
+<arg declared_type='void (^)(NSURLResponse *, id, NSError *)' function_pointer='true' index='1' name='completionHandler' type='@?'>
+<arg declared_type='NSURLResponse*' type='@'/>
+<arg declared_type='id' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionDataTask*' type='@'/>
+</method>
+<method selector='dataTasks'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='downloadTaskWithRequest:progress:destination:completionHandler:'>
+<arg declared_type='NSURLRequest*' index='0' name='request' type='@'/>
+<arg declared_type='NSProgress**' index='1' name='progress' type='^@'/>
+<arg declared_type='NSURL *(^)(NSURL *, NSURLResponse *)' function_pointer='true' index='2' name='destination' type='@?'>
+<arg declared_type='NSURL*' type='@'/>
+<arg declared_type='NSURLResponse*' type='@'/>
+<retval declared_type='NSURL*' type='@'/>
+</arg>
+<arg declared_type='void (^)(NSURLResponse *, NSURL *, NSError *)' function_pointer='true' index='3' name='completionHandler' type='@?'>
+<arg declared_type='NSURLResponse*' type='@'/>
+<arg declared_type='NSURL*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionDownloadTask*' type='@'/>
+</method>
+<method selector='downloadTaskWithResumeData:progress:destination:completionHandler:'>
+<arg declared_type='NSData*' index='0' name='resumeData' type='@'/>
+<arg declared_type='NSProgress**' index='1' name='progress' type='^@'/>
+<arg declared_type='NSURL *(^)(NSURL *, NSURLResponse *)' function_pointer='true' index='2' name='destination' type='@?'>
+<arg declared_type='NSURL*' type='@'/>
+<arg declared_type='NSURLResponse*' type='@'/>
+<retval declared_type='NSURL*' type='@'/>
+</arg>
+<arg declared_type='void (^)(NSURLResponse *, NSURL *, NSError *)' function_pointer='true' index='3' name='completionHandler' type='@?'>
+<arg declared_type='NSURLResponse*' type='@'/>
+<arg declared_type='NSURL*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionDownloadTask*' type='@'/>
+</method>
+<method selector='downloadTasks'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='initWithSessionConfiguration:'>
+<arg declared_type='NSURLSessionConfiguration*' index='0' name='configuration' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='invalidateSessionCancelingTasks:'>
+<arg declared_type='BOOL' index='0' name='cancelPendingTasks' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='operationQueue'>
+<retval declared_type='NSOperationQueue*' type='@'/>
+</method>
+<method selector='reachabilityManager'>
+<retval declared_type='AFNetworkReachabilityManager*' type='@'/>
+</method>
+<method selector='responseSerializer'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='securityPolicy'>
+<retval declared_type='AFSecurityPolicy*' type='@'/>
+</method>
+<method selector='session'>
+<retval declared_type='NSURLSession*' type='@'/>
+</method>
+<method selector='setCompletionGroup:'>
+<arg declared_type='dispatch_group_t' index='0' name='completionGroup' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setCompletionQueue:'>
+<arg declared_type='dispatch_queue_t' index='0' name='completionQueue' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDataTaskDidBecomeDownloadTaskBlock:'>
+<arg declared_type='void (^)(NSURLSession *, NSURLSessionDataTask *, NSURLSessionDownloadTask *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSURLSessionDownloadTask*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDataTaskDidReceiveDataBlock:'>
+<arg declared_type='void (^)(NSURLSession *, NSURLSessionDataTask *, NSData *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSData*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDataTaskDidReceiveResponseBlock:'>
+<arg declared_type='NSURLSessionResponseDisposition (^)(NSURLSession *, NSURLSessionDataTask *, NSURLResponse *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSURLResponse*' type='@'/>
+<retval declared_type='NSURLSessionResponseDisposition' type='i' type64='q'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDataTaskWillCacheResponseBlock:'>
+<arg declared_type='NSCachedURLResponse *(^)(NSURLSession *, NSURLSessionDataTask *, NSCachedURLResponse *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionDataTask*' type='@'/>
+<arg declared_type='NSCachedURLResponse*' type='@'/>
+<retval declared_type='NSCachedURLResponse*' type='@'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDidFinishEventsForBackgroundURLSessionBlock:'>
+<arg declared_type='void (^)(NSURLSession *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDownloadTaskDidFinishDownloadingBlock:'>
+<arg declared_type='NSURL *(^)(NSURLSession *, NSURLSessionDownloadTask *, NSURL *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionDownloadTask*' type='@'/>
+<arg declared_type='NSURL*' type='@'/>
+<retval declared_type='NSURL*' type='@'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDownloadTaskDidResumeBlock:'>
+<arg declared_type='void (^)(NSURLSession *, NSURLSessionDownloadTask *, int64_t, int64_t)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionDownloadTask*' type='@'/>
+<arg declared_type='int64_t' type='q'/>
+<arg declared_type='int64_t' type='q'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDownloadTaskDidWriteDataBlock:'>
+<arg declared_type='void (^)(NSURLSession *, NSURLSessionDownloadTask *, int64_t, int64_t, int64_t)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionDownloadTask*' type='@'/>
+<arg declared_type='int64_t' type='q'/>
+<arg declared_type='int64_t' type='q'/>
+<arg declared_type='int64_t' type='q'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setResponseSerializer:'>
+<arg declared_type='id' index='0' name='responseSerializer' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSecurityPolicy:'>
+<arg declared_type='AFSecurityPolicy*' index='0' name='securityPolicy' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSessionDidBecomeInvalidBlock:'>
+<arg declared_type='void (^)(NSURLSession *, NSError *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSessionDidReceiveAuthenticationChallengeBlock:'>
+<arg declared_type='NSURLSessionAuthChallengeDisposition (^)(NSURLSession *, NSURLAuthenticationChallenge *, NSURLCredential **)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLAuthenticationChallenge*' type='@'/>
+<arg declared_type='NSURLCredential**' type='^@'/>
+<retval declared_type='NSURLSessionAuthChallengeDisposition' type='i' type64='q'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTaskDidCompleteBlock:'>
+<arg declared_type='void (^)(NSURLSession *, NSURLSessionTask *, NSError *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionTask*' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTaskDidReceiveAuthenticationChallengeBlock:'>
+<arg declared_type='NSURLSessionAuthChallengeDisposition (^)(NSURLSession *, NSURLSessionTask *, NSURLAuthenticationChallenge *, NSURLCredential **)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionTask*' type='@'/>
+<arg declared_type='NSURLAuthenticationChallenge*' type='@'/>
+<arg declared_type='NSURLCredential**' type='^@'/>
+<retval declared_type='NSURLSessionAuthChallengeDisposition' type='i' type64='q'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTaskDidSendBodyDataBlock:'>
+<arg declared_type='void (^)(NSURLSession *, NSURLSessionTask *, int64_t, int64_t, int64_t)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionTask*' type='@'/>
+<arg declared_type='int64_t' type='q'/>
+<arg declared_type='int64_t' type='q'/>
+<arg declared_type='int64_t' type='q'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTaskWillPerformHTTPRedirectionBlock:'>
+<arg declared_type='NSURLRequest *(^)(NSURLSession *, NSURLSessionTask *, NSURLResponse *, NSURLRequest *)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='NSURLSession*' type='@'/>
+<arg declared_type='NSURLSessionTask*' type='@'/>
+<arg declared_type='NSURLResponse*' type='@'/>
+<arg declared_type='NSURLRequest*' type='@'/>
+<retval declared_type='NSURLRequest*' type='@'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tasks'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='uploadTaskWithRequest:fromData:progress:completionHandler:'>
+<arg declared_type='NSURLRequest*' index='0' name='request' type='@'/>
+<arg declared_type='NSData*' index='1' name='bodyData' type='@'/>
+<arg declared_type='NSProgress**' index='2' name='progress' type='^@'/>
+<arg declared_type='void (^)(NSURLResponse *, id, NSError *)' function_pointer='true' index='3' name='completionHandler' type='@?'>
+<arg declared_type='NSURLResponse*' type='@'/>
+<arg declared_type='id' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionUploadTask*' type='@'/>
+</method>
+<method selector='uploadTaskWithRequest:fromFile:progress:completionHandler:'>
+<arg declared_type='NSURLRequest*' index='0' name='request' type='@'/>
+<arg declared_type='NSURL*' index='1' name='fileURL' type='@'/>
+<arg declared_type='NSProgress**' index='2' name='progress' type='^@'/>
+<arg declared_type='void (^)(NSURLResponse *, id, NSError *)' function_pointer='true' index='3' name='completionHandler' type='@?'>
+<arg declared_type='NSURLResponse*' type='@'/>
+<arg declared_type='id' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionUploadTask*' type='@'/>
+</method>
+<method selector='uploadTaskWithStreamedRequest:progress:completionHandler:'>
+<arg declared_type='NSURLRequest*' index='0' name='request' type='@'/>
+<arg declared_type='NSProgress**' index='1' name='progress' type='^@'/>
+<arg declared_type='void (^)(NSURLResponse *, id, NSError *)' function_pointer='true' index='2' name='completionHandler' type='@?'>
+<arg declared_type='NSURLResponse*' type='@'/>
+<arg declared_type='id' type='@'/>
+<arg declared_type='NSError*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='NSURLSessionUploadTask*' type='@'/>
+</method>
+<method selector='uploadTasks'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+</class>
+<class name='AFXMLDocumentResponseSerializer'>
+<method selector='options'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method class_method='true' selector='serializerWithXMLDocumentOptions:'>
+<arg declared_type='NSUInteger' index='0' name='mask' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setOptions:'>
+<arg declared_type='NSUInteger' index='0' name='options' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPEOFToken'>
+<method class_method='true' selector='eof'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CPErrorToken'>
+<method selector='errorMessage'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='errorWithMessage:'>
+<arg declared_type='NSString*' index='0' name='errorMessage' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithMesage:'>
+<arg declared_type='NSString*' index='0' name='errorMessage' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setErrorMessage:'>
+<arg declared_type='NSString*' index='0' name='errorMessage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPGrammar'>
+<method selector='addRHSRules:toRules:'>
+<arg declared_type='NSDictionary*' index='0' name='rules' type='@'/>
+<arg declared_type='NSArray*' index='1' name='oldRules' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='addRule:'>
+<arg declared_type='CPRule*' index='0' name='rule' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='allNonTerminalNames'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='allRules'>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='allSymbolNames'>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='augmentedGrammar'>
+<retval declared_type='CPGrammar*' type='@'/>
+</method>
+<method selector='collectRHSElementsForNewRules:'>
+<arg declared_type='NSArray*' index='0' name='rightHandSide' type='@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='first:'>
+<arg declared_type='NSArray*' index='0' name='obj' type='@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='firstSymbol:'>
+<arg declared_type='CPGrammarSymbol*' index='0' name='obj' type='@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='follow:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='followCache'>
+<retval declared_type='NSMutableDictionary*' type='@'/>
+</method>
+<method class_method='true' selector='grammarWithStart:backusNaurForm:'>
+<arg declared_type='NSString*' index='0' name='start' type='@'/>
+<arg declared_type='NSString*' index='1' name='bnf' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='grammarWithStart:backusNaurForm:error:'>
+<arg declared_type='NSString*' index='0' name='start' type='@'/>
+<arg declared_type='NSString*' index='1' name='bnf' type='@'/>
+<arg declared_type='NSError**' index='2' name='error' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='grammarWithStart:rules:'>
+<arg declared_type='NSString*' index='0' name='start' type='@'/>
+<arg declared_type='NSArray*' index='1' name='rules' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='indexOfRule:'>
+<arg declared_type='CPRule*' index='0' name='rule' type='@'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='initWithStart:backusNaurForm:'>
+<arg declared_type='NSString*' index='0' name='start' type='@'/>
+<arg declared_type='NSString*' index='1' name='bnf' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithStart:backusNaurForm:error:'>
+<arg declared_type='NSString*' index='0' name='start' type='@'/>
+<arg declared_type='NSString*' index='1' name='bnf' type='@'/>
+<arg declared_type='NSError**' index='2' name='error' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithStart:rules:'>
+<arg declared_type='NSString*' index='0' name='start' type='@'/>
+<arg declared_type='NSArray*' index='1' name='rules' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='lr0Closure:'>
+<arg declared_type='NSSet*' index='0' name='i' type='@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='lr0GotoKernelWithItems:symbol:'>
+<arg declared_type='NSSet*' index='0' name='i' type='@'/>
+<arg declared_type='CPGrammarSymbol*' index='1' name='symbol' type='@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='lr0Kernels'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='lr1Closure:'>
+<arg declared_type='NSSet*' index='0' name='i' type='@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='lr1GotoKernelWithItems:symbol:'>
+<arg declared_type='NSSet*' index='0' name='i' type='@'/>
+<arg declared_type='CPGrammarSymbol*' index='1' name='symbol' type='@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='nameNewRules:withRules:'>
+<arg declared_type='NSSet*' index='0' name='rhsElements' type='@'/>
+<arg declared_type='NSArray*' index='1' name='oldRules' type='@'/>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='orderedRules'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='rules'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='rulesByNonTerminal'>
+<retval declared_type='NSMutableDictionary*' type='@'/>
+</method>
+<method selector='rulesForNonTerminalWithName:'>
+<arg declared_type='NSString*' index='0' name='nonTerminalName' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='setFollowCache:'>
+<arg declared_type='NSMutableDictionary*' index='0' name='followCache' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRules:'>
+<arg declared_type='NSArray*' index='0' name='rules' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRulesByNonTerminal:'>
+<arg declared_type='NSMutableDictionary*' index='0' name='rulesByNonTerminal' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setStart:'>
+<arg declared_type='NSString*' index='0' name='start' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='start'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='symbolNameNotInSet:basedOnName:'>
+<arg declared_type='NSSet*' index='0' name='symbols' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='symbolNamesInRules:'>
+<arg declared_type='NSArray*' index='0' name='rules' type='@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='tidyRightHandSides:error:'>
+<arg declared_type='NSArray*' index='0' name='oldRules' type='@'/>
+<arg declared_type='NSError**' index='1' name='error' type='^@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='uniqueSymbolNameBasedOnName:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='CPGrammarSymbol'>
+<method selector='initWithName:isTerminal:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<arg declared_type='BOOL' index='1' name='terminal' type='B'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isEqualToGrammarSymbol:'>
+<arg declared_type='CPGrammarSymbol*' index='0' name='object' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isTerminal'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='name'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='nonTerminalWithName:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setName:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTerminal:'>
+<arg declared_type='BOOL' index='0' name='terminal' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='terminalWithName:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CPIdentifierRecogniser'>
+<method selector='identifierCharacters'>
+<retval declared_type='NSCharacterSet*' type='@'/>
+</method>
+<method class_method='true' selector='identifierRecogniser'>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='identifierRecogniserWithInitialCharacters:identifierCharacters:'>
+<arg declared_type='NSCharacterSet*' index='0' name='initialCharacters' type='@'/>
+<arg declared_type='NSCharacterSet*' index='1' name='identifierCharacters' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithInitialCharacters:identifierCharacters:'>
+<arg declared_type='NSCharacterSet*' index='0' name='initialCharacters' type='@'/>
+<arg declared_type='NSCharacterSet*' index='1' name='identifierCharacters' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initialCharacters'>
+<retval declared_type='NSCharacterSet*' type='@'/>
+</method>
+<method selector='setIdentifierCharacters:'>
+<arg declared_type='NSCharacterSet*' index='0' name='identifierCharacters' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setInitialCharacters:'>
+<arg declared_type='NSCharacterSet*' index='0' name='initialCharacters' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPIdentifierToken'>
+<method selector='identifier'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithIdentifier:'>
+<arg declared_type='NSString*' index='0' name='identifier' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setIdentifier:'>
+<arg declared_type='NSString*' index='0' name='identifier' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='tokenWithIdentifier:'>
+<arg declared_type='NSString*' index='0' name='identifier' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CPItem'>
+<method selector='followingSymbols'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='initWithRule:position:'>
+<arg declared_type='CPRule*' index='0' name='rule' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='position' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isEqualToItem:'>
+<arg declared_type='CPItem*' index='0' name='item' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='itemByMovingDotRight'>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='itemWithRule:position:'>
+<arg declared_type='CPRule*' index='0' name='rule' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='position' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='nextSymbol'>
+<retval declared_type='CPGrammarSymbol*' type='@'/>
+</method>
+<method selector='position'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='rule'>
+<retval declared_type='CPRule*' type='@'/>
+</method>
+</class>
+<class name='CPJSONParser'>
+<method selector='parse:'>
+<arg declared_type='NSString*' index='0' name='json' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CPKeywordRecogniser'>
+<method selector='initWithKeyword:'>
+<arg declared_type='NSString*' index='0' name='keyword' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithKeyword:invalidFollowingCharacters:'>
+<arg declared_type='NSString*' index='0' name='keyword' type='@'/>
+<arg declared_type='NSCharacterSet*' index='1' name='invalidFollowingCharacters' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='invalidFollowingCharacters'>
+<retval declared_type='NSCharacterSet*' type='@'/>
+</method>
+<method selector='keyword'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='recogniserForKeyword:'>
+<arg declared_type='NSString*' index='0' name='keyword' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='recogniserForKeyword:invalidFollowingCharacters:'>
+<arg declared_type='NSString*' index='0' name='keyword' type='@'/>
+<arg declared_type='NSCharacterSet*' index='1' name='invalidFollowingCharacters' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setInvalidFollowingCharacters:'>
+<arg declared_type='NSCharacterSet*' index='0' name='invalidFollowingCharacters' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setKeyword:'>
+<arg declared_type='NSString*' index='0' name='keyword' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPKeywordToken'>
+<method selector='initWithKeyword:'>
+<arg declared_type='NSString*' index='0' name='keyword' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='keyword'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setKeyword:'>
+<arg declared_type='NSString*' index='0' name='keyword' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='tokenWithKeyword:'>
+<arg declared_type='NSString*' index='0' name='keyword' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CPLR1Item'>
+<method selector='initWithRule:position:terminal:'>
+<arg declared_type='CPRule*' index='0' name='rule' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='position' type='I' type64='Q'/>
+<arg declared_type='CPGrammarSymbol*' index='2' name='terminal' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='lr1ItemWithRule:position:terminal:'>
+<arg declared_type='CPRule*' index='0' name='rule' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='position' type='I' type64='Q'/>
+<arg declared_type='CPGrammarSymbol*' index='2' name='terminal' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='terminal'>
+<retval declared_type='CPGrammarSymbol*' type='@'/>
+</method>
+</class>
+<class name='CPNumberRecogniser'>
+<method class_method='true' selector='floatRecogniser'>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='integerRecogniser'>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='numberRecogniser'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='recognisesFloats'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='recognisesInts'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setRecognisesFloats:'>
+<arg declared_type='BOOL' index='0' name='recognisesFloats' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRecognisesInts:'>
+<arg declared_type='BOOL' index='0' name='recognisesInts' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPNumberToken'>
+<method selector='initWithNumber:'>
+<arg declared_type='NSNumber*' index='0' name='number' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='number'>
+<retval declared_type='NSNumber*' type='@'/>
+</method>
+<method selector='setNumber:'>
+<arg declared_type='NSNumber*' index='0' name='number' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='tokenWithNumber:'>
+<arg declared_type='NSNumber*' index='0' name='number' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CPParser'>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='grammar'>
+<retval declared_type='CPGrammar*' type='@'/>
+</method>
+<method selector='initWithGrammar:'>
+<arg declared_type='CPGrammar*' index='0' name='grammar' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='parse:'>
+<arg declared_type='CPTokenStream*' index='0' name='tokenStream' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='parserWithGrammar:'>
+<arg declared_type='CPGrammar*' index='0' name='grammar' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPQuotedRecogniser'>
+<method selector='endQuote'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='escapeReplacer'>
+<retval declared_type='NSString *(^)(NSString *, NSUInteger *)' function_pointer='true' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='NSUInteger*' type='^I' type64='^Q'/>
+<retval declared_type='NSString*' type='@'/>
+</retval>
+</method>
+<method selector='escapeSequence'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithStartQuote:endQuote:escapeSequence:maximumLength:name:'>
+<arg declared_type='NSString*' index='0' name='startQuote' type='@'/>
+<arg declared_type='NSString*' index='1' name='endQuote' type='@'/>
+<arg declared_type='NSString*' index='2' name='escapeSequence' type='@'/>
+<arg declared_type='NSUInteger' index='3' name='maximumLength' type='I' type64='Q'/>
+<arg declared_type='NSString*' index='4' name='name' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='maximumLength'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='name'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='quotedRecogniserWithStartQuote:endQuote:escapeSequence:maximumLength:name:'>
+<arg declared_type='NSString*' index='0' name='startQuote' type='@'/>
+<arg declared_type='NSString*' index='1' name='endQuote' type='@'/>
+<arg declared_type='NSString*' index='2' name='escapeSequence' type='@'/>
+<arg declared_type='NSUInteger' index='3' name='maximumLength' type='I' type64='Q'/>
+<arg declared_type='NSString*' index='4' name='name' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='quotedRecogniserWithStartQuote:endQuote:escapeSequence:name:'>
+<arg declared_type='NSString*' index='0' name='startQuote' type='@'/>
+<arg declared_type='NSString*' index='1' name='endQuote' type='@'/>
+<arg declared_type='NSString*' index='2' name='escapeSequence' type='@'/>
+<arg declared_type='NSString*' index='3' name='name' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='quotedRecogniserWithStartQuote:endQuote:name:'>
+<arg declared_type='NSString*' index='0' name='startQuote' type='@'/>
+<arg declared_type='NSString*' index='1' name='endQuote' type='@'/>
+<arg declared_type='NSString*' index='2' name='name' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setEndQuote:'>
+<arg declared_type='NSString*' index='0' name='endQuote' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEscapeReplacer:'>
+<arg declared_type='NSString *(^)(NSString *, NSUInteger *)' function_pointer='true' index='0' name='escapeReplacer' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='NSUInteger*' type='^I' type64='^Q'/>
+<retval declared_type='NSString*' type='@'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setEscapeSequence:'>
+<arg declared_type='NSString*' index='0' name='escapeSequence' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMaximumLength:'>
+<arg declared_type='NSUInteger' index='0' name='maximumLength' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setName:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setStartQuote:'>
+<arg declared_type='NSString*' index='0' name='startQuote' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='startQuote'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='CPQuotedToken'>
+<method selector='content'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='content:quotedWith:name:'>
+<arg declared_type='NSString*' index='0' name='content' type='@'/>
+<arg declared_type='NSString*' index='1' name='startQuote' type='@'/>
+<arg declared_type='NSString*' index='2' name='name' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithContent:quoteType:name:'>
+<arg declared_type='NSString*' index='0' name='content' type='@'/>
+<arg declared_type='NSString*' index='1' name='startQuote' type='@'/>
+<arg declared_type='NSString*' index='2' name='name' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='quoteType'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setContent:'>
+<arg declared_type='NSString*' index='0' name='content' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setQuoteType:'>
+<arg declared_type='NSString*' index='0' name='quoteType' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPRHSItem'>
+<method selector='addTag:'>
+<arg declared_type='NSString*' index='0' name='tagName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='alternatives'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='mayNotExist'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='nonTerminalsUsed'>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='repeats'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setAlternatives:'>
+<arg declared_type='NSArray*' index='0' name='alternatives' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMayNotExist:'>
+<arg declared_type='BOOL' index='0' name='mayNotExist' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRepeats:'>
+<arg declared_type='BOOL' index='0' name='repeats' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldCollapse:'>
+<arg declared_type='BOOL' index='0' name='shouldCollapse' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTags:'>
+<arg declared_type='NSSet*' index='0' name='tags' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shouldCollapse'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='tagNamesWithError:'>
+<arg declared_type='NSError**' index='0' name='err' type='^@'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='tags'>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+</class>
+<class name='CPRHSItemResult'>
+<method selector='contents'>
+<retval declared_type='NSMutableArray*' type='@'/>
+</method>
+<method selector='setContents:'>
+<arg declared_type='NSMutableArray*' index='0' name='contents' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldCollapse:'>
+<arg declared_type='BOOL' index='0' name='shouldCollapse' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTagNames:'>
+<arg declared_type='NSSet*' index='0' name='tagNames' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTagValues:'>
+<arg declared_type='NSDictionary*' index='0' name='tagValues' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shouldCollapse'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='tagNames'>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='tagValues'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+</class>
+<class name='CPRecoveryAction'>
+<method selector='additionalToken'>
+<retval declared_type='CPToken*' type='@'/>
+</method>
+<method selector='initWithAdditionalToken:'>
+<arg declared_type='CPToken*' index='0' name='token' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithDeleteAction'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithStopAction'>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='recoveryActionDeletingCurrentToken'>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='recoveryActionStop'>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='recoveryActionWithAdditionalToken:'>
+<arg declared_type='CPToken*' index='0' name='token' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='recoveryType'>
+<retval declared_type='CPRecoveryType' type='i'/>
+</method>
+<method selector='setAdditionalToken:'>
+<arg declared_type='CPToken*' index='0' name='additionalToken' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRecoveryType:'>
+<arg declared_type='CPRecoveryType' index='0' name='recoveryType' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPRegexpRecogniser'>
+<method selector='initWithRegexp:matchHandler:'>
+<arg declared_type='NSRegularExpression*' index='0' name='regexp' type='@'/>
+<arg declared_type='CPRegexpKeywordRecogniserMatchHandler' function_pointer='true' index='1' name='matchHandler' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='NSTextCheckingResult*' type='@'/>
+<retval declared_type='CPToken*' type='@'/>
+</arg>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='recogniserForRegexp:matchHandler:'>
+<arg declared_type='NSRegularExpression*' index='0' name='regexp' type='@'/>
+<arg declared_type='CPRegexpKeywordRecogniserMatchHandler' function_pointer='true' index='1' name='matchHandler' type='@?'>
+<arg declared_type='NSString*' type='@'/>
+<arg declared_type='NSTextCheckingResult*' type='@'/>
+<retval declared_type='CPToken*' type='@'/>
+</arg>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='regexp'>
+<retval declared_type='NSRegularExpression*' type='@'/>
+</method>
+<method selector='setRegexp:'>
+<arg declared_type='NSRegularExpression*' index='0' name='regexp' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPRule'>
+<method selector='initWithName:rightHandSideElements:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<arg declared_type='NSArray*' index='1' name='rightHandSideElements' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithName:rightHandSideElements:representitiveClass:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<arg declared_type='NSArray*' index='1' name='rightHandSideElements' type='@'/>
+<arg declared_type='Class' index='2' name='representitiveClass' type='#'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithName:rightHandSideElements:tag:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<arg declared_type='NSArray*' index='1' name='rightHandSideElements' type='@'/>
+<arg declared_type='NSUInteger' index='2' name='tag' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='name'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='representitiveClass'>
+<retval declared_type='Class' type='#'/>
+</method>
+<method selector='rightHandSideElements'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method class_method='true' selector='ruleWithName:rightHandSideElements:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<arg declared_type='NSArray*' index='1' name='rightHandSideElements' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='ruleWithName:rightHandSideElements:representitiveClass:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<arg declared_type='NSArray*' index='1' name='rightHandSideElements' type='@'/>
+<arg declared_type='Class' index='2' name='representitiveClass' type='#'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='ruleWithName:rightHandSideElements:tag:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<arg declared_type='NSArray*' index='1' name='rightHandSideElements' type='@'/>
+<arg declared_type='NSUInteger' index='2' name='tag' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setName:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRepresentitiveClass:'>
+<arg declared_type='Class' index='0' name='representitiveClass' type='#'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRightHandSideElements:'>
+<arg declared_type='NSArray*' index='0' name='rightHandSideElements' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShouldCollapse:'>
+<arg declared_type='BOOL' index='0' name='shouldCollapse' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTag:'>
+<arg declared_type='NSUInteger' index='0' name='tag' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTagNames:'>
+<arg declared_type='NSSet*' index='0' name='tagNames' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shouldCollapse'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='tag'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='tagNames'>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+</class>
+<class name='CPShiftReduceAction'>
+<method class_method='true' selector='acceptAction'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='descriptionWithGrammar:'>
+<arg declared_type='CPGrammar*' index='0' name='g' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithReductionRule:'>
+<arg declared_type='CPRule*' index='0' name='reduction' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithShift:'>
+<arg declared_type='NSUInteger' index='0' name='shiftLocation' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isAccept'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isEqualToShiftReduceAction:'>
+<arg declared_type='CPShiftReduceAction*' index='0' name='object' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isReduceAction'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isShiftAction'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='newState'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method class_method='true' selector='reduceAction:'>
+<arg declared_type='CPRule*' index='0' name='reduction' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='reductionRule'>
+<retval declared_type='CPRule*' type='@'/>
+</method>
+<method class_method='true' selector='shiftAction:'>
+<arg declared_type='NSUInteger' index='0' name='shiftLocation' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CPShiftReduceActionTable'>
+<method selector='acceptableTokenNamesForState:'>
+<arg declared_type='NSUInteger' index='0' name='state' type='I' type64='Q'/>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+<method selector='actionForState:token:'>
+<arg declared_type='NSUInteger' index='0' name='state' type='I' type64='Q'/>
+<arg declared_type='CPToken*' index='1' name='token' type='@'/>
+<retval declared_type='CPShiftReduceAction*' type='@'/>
+</method>
+<method selector='descriptionWithGrammar:'>
+<arg declared_type='CPGrammar*' index='0' name='g' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithCapacity:'>
+<arg declared_type='NSUInteger' index='0' name='capacity' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setAction:forState:name:'>
+<arg declared_type='CPShiftReduceAction*' index='0' name='action' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='state' type='I' type64='Q'/>
+<arg declared_type='NSString*' index='2' name='token' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='CPShiftReduceGotoTable'>
+<method selector='gotoForState:rule:'>
+<arg declared_type='NSUInteger' index='0' name='state' type='I' type64='Q'/>
+<arg declared_type='CPRule*' index='1' name='rule' type='@'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='initWithCapacity:'>
+<arg declared_type='NSUInteger' index='0' name='capacity' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setGoto:forState:nonTerminalNamed:'>
+<arg declared_type='NSUInteger' index='0' name='gotoIndex' type='I' type64='Q'/>
+<arg declared_type='NSUInteger' index='1' name='state' type='I' type64='Q'/>
+<arg declared_type='NSString*' index='2' name='nonTerminalName' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='CPShiftReduceParser'>
+<method selector='actionTable'>
+<retval declared_type='CPShiftReduceActionTable*' type='@'/>
+</method>
+<method selector='constructShiftReduceTables'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='gotoTable'>
+<retval declared_type='CPShiftReduceGotoTable*' type='@'/>
+</method>
+<method selector='setActionTable:'>
+<arg declared_type='CPShiftReduceActionTable*' index='0' name='actionTable' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setGotoTable:'>
+<arg declared_type='CPShiftReduceGotoTable*' index='0' name='gotoTable' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPShiftReduceState'>
+<method selector='initWithObject:state:'>
+<arg declared_type='NSObject*' index='0' name='initObject' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='initState' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='object'>
+<retval declared_type='NSObject*' type='@'/>
+</method>
+<method class_method='true' selector='shiftReduceStateWithObject:state:'>
+<arg declared_type='NSObject*' index='0' name='object' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='state' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='state'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+</class>
+<class name='CPSyntaxTree'>
+<method selector='childAtIndex:'>
+<arg declared_type='NSUInteger' index='0' name='idx' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='children'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='initWithRule:children:'>
+<arg declared_type='CPRule*' index='0' name='nonTerminal' type='@'/>
+<arg declared_type='NSArray*' index='1' name='children' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithRule:children:tagValues:'>
+<arg declared_type='CPRule*' index='0' name='nonTerminal' type='@'/>
+<arg declared_type='NSArray*' index='1' name='children' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='tagValues' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='rule'>
+<retval declared_type='CPRule*' type='@'/>
+</method>
+<method class_method='true' selector='syntaxTreeWithRule:children:'>
+<arg declared_type='CPRule*' index='0' name='nonTerminal' type='@'/>
+<arg declared_type='NSArray*' index='1' name='children' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='syntaxTreeWithRule:children:tagValues:'>
+<arg declared_type='CPRule*' index='0' name='nonTerminal' type='@'/>
+<arg declared_type='NSArray*' index='1' name='children' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='tagValues' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='tagValues'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='valueForTag:'>
+<arg declared_type='NSString*' index='0' name='tagName' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CPToken'>
+<method selector='characterNumber'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='columnNumber'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='length'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='lineNumber'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='name'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setCharacterNumber:'>
+<arg declared_type='NSUInteger' index='0' name='characterNumber' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setColumnNumber:'>
+<arg declared_type='NSUInteger' index='0' name='columnNumber' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLength:'>
+<arg declared_type='NSUInteger' index='0' name='length' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLineNumber:'>
+<arg declared_type='NSUInteger' index='0' name='lineNumber' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPTokenStream'>
+<method selector='closeTokenStream'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='initWithTokens:'>
+<arg declared_type='NSArray*' index='0' name='tokens' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='peekToken'>
+<retval declared_type='CPToken*' type='@'/>
+</method>
+<method selector='popToken'>
+<retval declared_type='CPToken*' type='@'/>
+</method>
+<method selector='pushToken:'>
+<arg declared_type='CPToken*' index='0' name='token' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='pushTokens:'>
+<arg declared_type='NSArray*' index='0' name='tokens' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='tokenStreamWithTokens:'>
+<arg declared_type='NSArray*' index='0' name='tokens' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CPTokeniser'>
+<method selector='addTokenRecogniser:'>
+<arg declared_type='id' index='0' name='recogniser' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='insertTokenRecogniser:atPriority:'>
+<arg declared_type='id' index='0' name='recogniser' type='@'/>
+<arg declared_type='NSInteger' index='1' name='priority' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='insertTokenRecogniser:beforeRecogniser:'>
+<arg declared_type='id' index='0' name='recogniser' type='@'/>
+<arg declared_type='id' index='1' name='other' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeTokenRecogniser:'>
+<arg declared_type='id' index='0' name='recogniser' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDelegate:'>
+<arg declared_type='id' index='0' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tokenise:'>
+<arg declared_type='NSString*' index='0' name='input' type='@'/>
+<retval declared_type='CPTokenStream*' type='@'/>
+</method>
+<method selector='tokenise:into:'>
+<arg declared_type='NSString*' index='0' name='input' type='@'/>
+<arg declared_type='CPTokenStream*' index='1' name='tokenStream' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CPWhiteSpaceToken'>
+<method selector='initWithWhiteSpace:'>
+<arg declared_type='NSString*' index='0' name='whiteSpace' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setWhiteSpace:'>
+<arg declared_type='NSString*' index='0' name='whiteSpace' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='whiteSpace'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='whiteSpace:'>
+<arg declared_type='NSString*' index='0' name='whiteSpace' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CSSBaseSelector'>
+<method class_method='true' selector='selector'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CSSCombinator'>
+<method class_method='true' selector='noneCombinator'>
+<retval declared_type='CSSCombinator*' type='@'/>
+</method>
+<method selector='setType:'>
+<arg declared_type='CSSCombinatorType' index='0' name='type' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='type'>
+<retval declared_type='CSSCombinatorType' type='i' type64='q'/>
+</method>
+</class>
+<class name='CSSNamedSelector'>
+<method selector='name'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='selectorWithName:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setName:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CSSPseudoClass'>
+<method selector='parent'>
+<retval declared_type='CSSNamedSelector*' type='@'/>
+</method>
+<method selector='setParent:'>
+<arg declared_type='CSSNamedSelector*' index='0' name='parent' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CSSSelectorAttribute'>
+<method selector='attributeOperator'>
+<retval declared_type='CSSSelectorAttributeOperator*' type='@'/>
+</method>
+<method selector='name'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setAttributeOperator:'>
+<arg declared_type='CSSSelectorAttributeOperator*' index='0' name='attributeOperator' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setName:'>
+<arg declared_type='NSString*' index='0' name='name' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setValue:'>
+<arg declared_type='NSString*' index='0' name='value' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='value'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='CSSSelectorAttributeOperator'>
+<method selector='attributeOperator'>
+<retval declared_type='CSSSelectorAttributeOperatorType' type='i' type64='q'/>
+</method>
+<method class_method='true' selector='operatorWithString:'>
+<arg declared_type='NSString*' index='0' name='type' type='@'/>
+<retval declared_type='CSSSelectorAttributeOperatorType' type='i' type64='q'/>
+</method>
+<method selector='setAttributeOperator:'>
+<arg declared_type='CSSSelectorAttributeOperatorType' index='0' name='attributeOperator' type='i' type64='q'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CSSSelectorGrammar'>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithPath:'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='CSSSelectorGroup'>
+<method selector='addSelectors:'>
+<arg declared_type='CSSSelectors*' index='0' name='selectors' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='selectors'>
+<retval declared_type='NSMutableArray*' type='@'/>
+</method>
+<method selector='setSelectors:'>
+<arg declared_type='NSMutableArray*' index='0' name='selectors' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CSSSelectorParser'>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithParser:'>
+<arg declared_type='CPParser*' index='0' name='parser' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='lastError'>
+<retval declared_type='NSError*' type='@'/>
+</method>
+<method selector='parse:error:'>
+<arg declared_type='NSString*' index='0' name='css' type='@'/>
+<arg declared_type='NSError**' index='1' name='error' type='^@'/>
+<retval declared_type='CSSSelectorGroup*' type='@'/>
+</method>
+<method selector='setLastError:'>
+<arg declared_type='NSError*' index='0' name='lastError' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='CSSSelectorSequence'>
+<method selector='addSelector:'>
+<arg declared_type='CSSBaseSelector*' index='0' name='selector' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='otherSelectors'>
+<retval declared_type='NSMutableArray*' type='@'/>
+</method>
+<method selector='pseudoClass'>
+<retval declared_type='CSSPseudoClass*' type='@'/>
+</method>
+<method selector='setOtherSelectors:'>
+<arg declared_type='NSMutableArray*' index='0' name='otherSelectors' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPseudoClass:'>
+<arg declared_type='CSSPseudoClass*' index='0' name='pseudoClass' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUniversalOrTypeSelector:'>
+<arg declared_type='CSSTypeSelector*' index='0' name='universalOrTypeSelector' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='universalOrTypeSelector'>
+<retval declared_type='CSSTypeSelector*' type='@'/>
+</method>
+</class>
+<class name='CSSSelectorToXPathConverter'>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithParser:'>
+<arg declared_type='CSSSelectorParser*' index='0' name='parser' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='parser'>
+<retval declared_type='CSSSelectorParser*' type='@'/>
+</method>
+<method selector='setParser:'>
+<arg declared_type='CSSSelectorParser*' index='0' name='parser' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='xpathWithCSS:error:'>
+<arg declared_type='NSString*' index='0' name='css' type='@'/>
+<arg declared_type='NSError**' index='1' name='error' type='^@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='CSSSelectorXPathVisitor'>
+<method selector='visit:'>
+<arg declared_type='CSSBaseSelector*' index='0' name='node' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='xpathString'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='CSSSelectors'>
+<method selector='addSelector:'>
+<arg declared_type='CSSBaseSelector*' index='0' name='selector' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='selectors'>
+<retval declared_type='NSMutableArray*' type='@'/>
+</method>
+<method selector='setSelectors:'>
+<arg declared_type='NSMutableArray*' index='0' name='selectors' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='DDASLLogger'>
+<method class_method='true' selector='sharedInstance'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='DDAbstractDatabaseLogger'>
+<method selector='deleteInterval'>
+<retval declared_type='NSTimeInterval' type='d'/>
+</method>
+<method selector='deleteOldLogEntries'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='deleteOnEverySave'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='maxAge'>
+<retval declared_type='NSTimeInterval' type='d'/>
+</method>
+<method selector='saveInterval'>
+<retval declared_type='NSTimeInterval' type='d'/>
+</method>
+<method selector='savePendingLogEntries'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='saveThreshold'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='setDeleteInterval:'>
+<arg declared_type='NSTimeInterval' index='0' name='deleteInterval' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setDeleteOnEverySave:'>
+<arg declared_type='BOOL' index='0' name='deleteOnEverySave' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMaxAge:'>
+<arg declared_type='NSTimeInterval' index='0' name='maxAge' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSaveInterval:'>
+<arg declared_type='NSTimeInterval' index='0' name='saveInterval' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setSaveThreshold:'>
+<arg declared_type='NSUInteger' index='0' name='saveThreshold' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='DDAbstractLogger'>
+<method selector='isOnGlobalLoggingQueue'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isOnInternalLoggerQueue'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='logFormatter'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setLogFormatter:'>
+<arg declared_type='id' index='0' name='formatter' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='DDContextBlacklistFilterLogFormatter'>
+<method selector='addToBlacklist:'>
+<arg declared_type='int' index='0' name='loggingContext' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='blacklist'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isOnBlacklist:'>
+<arg declared_type='int' index='0' name='loggingContext' type='i'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='removeFromBlacklist:'>
+<arg declared_type='int' index='0' name='loggingContext' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='DDContextWhitelistFilterLogFormatter'>
+<method selector='addToWhitelist:'>
+<arg declared_type='int' index='0' name='loggingContext' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isOnWhitelist:'>
+<arg declared_type='int' index='0' name='loggingContext' type='i'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='removeFromWhitelist:'>
+<arg declared_type='int' index='0' name='loggingContext' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='whitelist'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+</class>
+<class name='DDDispatchQueueLogFormatter'>
+<method selector='formatLogMessage:'>
+<arg declared_type='DDLogMessage*' index='0' name='logMessage' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='maxQueueLength'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='minQueueLength'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='queueThreadLabelForLogMessage:'>
+<arg declared_type='DDLogMessage*' index='0' name='logMessage' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='replacementStringForQueueLabel:'>
+<arg declared_type='NSString*' index='0' name='longLabel' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='setMaxQueueLength:'>
+<arg declared_type='NSUInteger' index='0' name='maxQueueLength' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMinQueueLength:'>
+<arg declared_type='NSUInteger' index='0' name='minQueueLength' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setReplacementString:forQueueLabel:'>
+<arg declared_type='NSString*' index='0' name='shortLabel' type='@'/>
+<arg declared_type='NSString*' index='1' name='longLabel' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='stringFromDate:'>
+<arg declared_type='NSDate*' index='0' name='date' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='DDFileLogger'>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithLogFileManager:'>
+<arg declared_type='id' index='0' name='logFileManager' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='logFileManager'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='maximumFileSize'>
+<retval declared_type='unsigned long long' type='Q'/>
+</method>
+<method selector='rollLogFile'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='rollLogFileWithCompletionBlock:'>
+<arg declared_type='void (^)()' function_pointer='true' index='0' name='completionBlock' type='@?'>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='rollingFrequency'>
+<retval declared_type='NSTimeInterval' type='d'/>
+</method>
+<method selector='setLogFileManager:'>
+<arg declared_type='id' index='0' name='logFileManager' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMaximumFileSize:'>
+<arg declared_type='unsigned long long' index='0' name='maximumFileSize' type='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setRollingFrequency:'>
+<arg declared_type='NSTimeInterval' index='0' name='rollingFrequency' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='DDLog'>
+<method class_method='true' selector='addLogger:'>
+<arg declared_type='id' index='0' name='logger' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='addLogger:withLogLevel:'>
+<arg declared_type='id' index='0' name='logger' type='@'/>
+<arg declared_type='int' index='1' name='logLevel' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='allLoggers'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method class_method='true' selector='flushLog'>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='log:level:flag:context:file:function:line:tag:format:' variadic='true'>
+<arg declared_type='BOOL' index='0' name='synchronous' type='B'/>
+<arg declared_type='int' index='1' name='level' type='i'/>
+<arg declared_type='int' index='2' name='flag' type='i'/>
+<arg declared_type='int' index='3' name='context' type='i'/>
+<arg const='true' declared_type='char*' index='4' name='file' type='*'/>
+<arg const='true' declared_type='char*' index='5' name='function' type='*'/>
+<arg declared_type='int' index='6' name='line' type='i'/>
+<arg declared_type='id' index='7' name='tag' type='@'/>
+<arg declared_type='NSString*' index='8' name='format' printf_format='true' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='log:level:flag:context:file:function:line:tag:format:args:'>
+<arg declared_type='BOOL' index='0' name='asynchronous' type='B'/>
+<arg declared_type='int' index='1' name='level' type='i'/>
+<arg declared_type='int' index='2' name='flag' type='i'/>
+<arg declared_type='int' index='3' name='context' type='i'/>
+<arg const='true' declared_type='char*' index='4' name='file' type='*'/>
+<arg const='true' declared_type='char*' index='5' name='function' type='*'/>
+<arg declared_type='int' index='6' name='line' type='i'/>
+<arg declared_type='id' index='7' name='tag' type='@'/>
+<arg declared_type='NSString*' index='8' name='format' type='@'/>
+<arg declared_type='va_list' declared_type64='__va_list_tag*' index='9' name='argList' type='*' type64='^{__va_list_tag=II^v^v}'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='logLevelForClass:'>
+<arg declared_type='Class' index='0' name='aClass' type='#'/>
+<retval declared_type='int' type='i'/>
+</method>
+<method class_method='true' selector='logLevelForClassWithName:'>
+<arg declared_type='NSString*' index='0' name='aClassName' type='@'/>
+<retval declared_type='int' type='i'/>
+</method>
+<method class_method='true' selector='loggingQueue'>
+<retval declared_type='dispatch_queue_t' type='@'/>
+</method>
+<method class_method='true' selector='registeredClassNames'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method class_method='true' selector='registeredClasses'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method class_method='true' selector='removeAllLoggers'>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='removeLogger:'>
+<arg declared_type='id' index='0' name='logger' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setLogLevel:forClass:'>
+<arg declared_type='int' index='0' name='logLevel' type='i'/>
+<arg declared_type='Class' index='1' name='aClass' type='#'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setLogLevel:forClassWithName:'>
+<arg declared_type='int' index='0' name='logLevel' type='i'/>
+<arg declared_type='NSString*' index='1' name='aClassName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='DDLogFileFormatterDefault'>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithDateFormatter:'>
+<arg declared_type='NSDateFormatter*' index='0' name='dateFormatter' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='DDLogFileInfo'>
+<method selector='addExtendedAttributeWithName:'>
+<arg declared_type='NSString*' index='0' name='attrName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='age'>
+<retval declared_type='NSTimeInterval' type='d'/>
+</method>
+<method selector='creationDate'>
+<retval declared_type='NSDate*' type='@'/>
+</method>
+<method selector='fileAttributes'>
+<retval declared_type='NSDictionary*' type='@'/>
+</method>
+<method selector='fileName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='filePath'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='fileSize'>
+<retval declared_type='unsigned long long' type='Q'/>
+</method>
+<method selector='hasExtendedAttributeWithName:'>
+<arg declared_type='NSString*' index='0' name='attrName' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='initWithFilePath:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isArchived'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='logFileWithPath:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='modificationDate'>
+<retval declared_type='NSDate*' type='@'/>
+</method>
+<method selector='removeExtendedAttributeWithName:'>
+<arg declared_type='NSString*' index='0' name='attrName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='renameFile:'>
+<arg declared_type='NSString*' index='0' name='newFileName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='reset'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='reverseCompareByCreationDate:'>
+<arg declared_type='DDLogFileInfo*' index='0' name='another' type='@'/>
+<retval declared_type='NSComparisonResult' type='i' type64='q'/>
+</method>
+<method selector='reverseCompareByModificationDate:'>
+<arg declared_type='DDLogFileInfo*' index='0' name='another' type='@'/>
+<retval declared_type='NSComparisonResult' type='i' type64='q'/>
+</method>
+<method selector='setCreationDate:'>
+<arg declared_type='NSDate*' index='0' name='creationDate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileAttributes:'>
+<arg declared_type='NSDictionary*' index='0' name='fileAttributes' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFileName:'>
+<arg declared_type='NSString*' index='0' name='fileName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setFilePath:'>
+<arg declared_type='NSString*' index='0' name='filePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setIsArchived:'>
+<arg declared_type='BOOL' index='0' name='isArchived' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setModificationDate:'>
+<arg declared_type='NSDate*' index='0' name='modificationDate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='DDLogFileManagerDefault'>
+<method selector='init'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithLogsDirectory:'>
+<arg declared_type='NSString*' index='0' name='logsDirectory' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isLogFile:'>
+<arg declared_type='NSString*' index='0' name='fileName' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='newLogFileName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='DDLogMessage'>
+<method selector='fileName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithLogMsg:level:flag:context:file:function:line:tag:options:'>
+<arg declared_type='NSString*' index='0' name='logMsg' type='@'/>
+<arg declared_type='int' index='1' name='logLevel' type='i'/>
+<arg declared_type='int' index='2' name='logFlag' type='i'/>
+<arg declared_type='int' index='3' name='logContext' type='i'/>
+<arg const='true' declared_type='char*' index='4' name='file' type='*'/>
+<arg const='true' declared_type='char*' index='5' name='function' type='*'/>
+<arg declared_type='int' index='6' name='line' type='i'/>
+<arg declared_type='id' index='7' name='tag' type='@'/>
+<arg declared_type='DDLogMessageOptions' index='8' name='optionsMask' type='i'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='methodName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='threadID'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='DDMultiFormatter'>
+<method selector='addFormatter:'>
+<arg declared_type='id' index='0' name='formatter' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='formatters'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='isFormattingWithFormatter:'>
+<arg declared_type='id' index='0' name='formatter' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='removeAllFormatters'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeFormatter:'>
+<arg declared_type='id' index='0' name='formatter' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='DDTTYLogger'>
+<method selector='clearAllColors'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='clearColorsForAllFlags'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='clearColorsForAllTags'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='clearColorsForFlag:'>
+<arg declared_type='int' index='0' name='mask' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='clearColorsForFlag:context:'>
+<arg declared_type='int' index='0' name='mask' type='i'/>
+<arg declared_type='int' index='1' name='context' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='clearColorsForTag:'>
+<arg declared_type='id' index='0' name='tag' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='colorsEnabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='setColorsEnabled:'>
+<arg declared_type='BOOL' index='0' name='colorsEnabled' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setForegroundColor:backgroundColor:forFlag:'>
+<arg declared_type='NSColor*' index='0' name='txtColor' type='@'/>
+<arg declared_type='NSColor*' index='1' name='bgColor' type='@'/>
+<arg declared_type='int' index='2' name='mask' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setForegroundColor:backgroundColor:forFlag:context:'>
+<arg declared_type='NSColor*' index='0' name='txtColor' type='@'/>
+<arg declared_type='NSColor*' index='1' name='bgColor' type='@'/>
+<arg declared_type='int' index='2' name='mask' type='i'/>
+<arg declared_type='int' index='3' name='ctxt' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setForegroundColor:backgroundColor:forTag:'>
+<arg declared_type='NSColor*' index='0' name='txtColor' type='@'/>
+<arg declared_type='NSColor*' index='1' name='bgColor' type='@'/>
+<arg declared_type='id' index='2' name='tag' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='sharedInstance'>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='IGHTMLDocument'>
+<method selector='initWithHTMLData:encoding:error:'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='encoding' type='@'/>
+<arg declared_type='NSError**' index='2' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithHTMLData:encoding:options:error:'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='encoding' type='@'/>
+<arg declared_type='id' index='2' name='options' type='@'/>
+<arg declared_type='NSError**' index='3' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithHTMLFile:encoding:error:'>
+<arg declared_type='NSString*' index='0' name='filename' type='@'/>
+<arg declared_type='NSString*' index='1' name='encoding' type='@'/>
+<arg declared_type='NSError**' index='2' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithHTMLFilePath:encoding:error:'>
+<arg declared_type='NSString*' index='0' name='fullPath' type='@'/>
+<arg declared_type='NSString*' index='1' name='encoding' type='@'/>
+<arg declared_type='NSError**' index='2' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithHTMLFragmentData:encoding:error:'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='encoding' type='@'/>
+<arg declared_type='NSError**' index='2' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithHTMLFragmentString:error:'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<arg declared_type='NSError**' index='1' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithHTMLResource:ofType:encoding:error:'>
+<arg declared_type='NSString*' index='0' name='filename' type='@'/>
+<arg declared_type='NSString*' index='1' name='extension' type='@'/>
+<arg declared_type='NSString*' index='2' name='encoding' type='@'/>
+<arg declared_type='NSError**' index='3' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithHTMLString:error:'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<arg declared_type='NSError**' index='1' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='IGXMLDocument'>
+<method selector='doc'>
+<retval declared_type='int' type='i'/>
+</method>
+<method selector='initWithURL:encoding:error:'>
+<arg declared_type='NSURL*' index='0' name='url' type='@'/>
+<arg declared_type='NSString*' index='1' name='encoding' type='@'/>
+<arg declared_type='NSError**' index='2' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithXMLData:encoding:error:'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='encoding' type='@'/>
+<arg declared_type='NSError**' index='2' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithXMLData:encoding:options:error:'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='encoding' type='@'/>
+<arg declared_type='id' index='2' name='options' type='@'/>
+<arg declared_type='NSError**' index='3' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithXMLFile:encoding:error:'>
+<arg declared_type='NSString*' index='0' name='filename' type='@'/>
+<arg declared_type='NSString*' index='1' name='encoding' type='@'/>
+<arg declared_type='NSError**' index='2' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithXMLFilePath:encoding:error:'>
+<arg declared_type='NSString*' index='0' name='fullPath' type='@'/>
+<arg declared_type='NSString*' index='1' name='encoding' type='@'/>
+<arg declared_type='NSError**' index='2' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithXMLResource:ofType:encoding:error:'>
+<arg declared_type='NSString*' index='0' name='resource' type='@'/>
+<arg declared_type='NSString*' index='1' name='extension' type='@'/>
+<arg declared_type='NSString*' index='2' name='encoding' type='@'/>
+<arg declared_type='NSError**' index='3' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithXMLString:error:'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<arg declared_type='NSError**' index='1' name='outError' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='IGXMLNode'>
+<method selector='initWithXMLNode:'>
+<arg declared_type='id' index='0' name='node' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='node'>
+<retval declared_type='int' type='i'/>
+</method>
+<method class_method='true' selector='nodeWithXMLNode:'>
+<arg declared_type='id' index='0' name='node' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setNode:'>
+<arg declared_type='int' index='0' name='node' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<class name='IGXMLNodeSet'>
+<method class_method='true' selector='emptyNodeSet'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initWithNodes:'>
+<arg declared_type='NSArray*' index='0' name='nodes' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='nodeSetWithNodes:'>
+<arg declared_type='NSArray*' index='0' name='nodes' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='objectAtIndexedSubscript:'>
+<arg declared_type='NSUInteger' index='0' name='idx' type='I' type64='Q'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='NSArray'>
+<method selector='cp_map:'>
+<arg declared_type='id (^)(id)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='id' type='@'/>
+<retval declared_type='id' type='@'/>
+</arg>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='addChildWithNode:'>
+<arg declared_type='IGXMLNode*' index='0' name='child' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addChildWithXMLString:'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addNextSiblingWithNode:'>
+<arg declared_type='IGXMLNode*' index='0' name='child' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addNextSiblingWithXMLString:'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addPreviousSiblingWithNode:'>
+<arg declared_type='IGXMLNode*' index='0' name='child' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addPreviousSiblingWithXMLString:'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='allObjects'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='appendPartWithFileData:name:fileName:mimeType:'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<arg declared_type='NSString*' index='2' name='fileName' type='@'/>
+<arg declared_type='NSString*' index='3' name='mimeType' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='appendPartWithFileURL:name:error:'>
+<arg declared_type='NSURL*' index='0' name='fileURL' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<arg declared_type='NSError**' index='2' name='error' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='appendPartWithFileURL:name:fileName:mimeType:error:'>
+<arg declared_type='NSURL*' index='0' name='fileURL' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<arg declared_type='NSString*' index='2' name='fileName' type='@'/>
+<arg declared_type='NSString*' index='3' name='mimeType' type='@'/>
+<arg declared_type='NSError**' index='4' name='error' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='appendPartWithFormData:name:'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='appendPartWithHeaders:body:'>
+<arg declared_type='NSDictionary*' index='0' name='headers' type='@'/>
+<arg declared_type='NSData*' index='1' name='body' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='appendPartWithInputStream:name:fileName:length:mimeType:'>
+<arg declared_type='NSInputStream*' index='0' name='inputStream' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<arg declared_type='NSString*' index='2' name='fileName' type='@'/>
+<arg declared_type='int64_t' index='3' name='length' type='q'/>
+<arg declared_type='NSString*' index='4' name='mimeType' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='appendWithNode:'>
+<arg declared_type='IGXMLNode*' index='0' name='child' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='appendWithXMLString:'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='attribute:'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='attribute:inNamespace:'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<arg declared_type='NSString*' index='1' name='ns' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='attributeNames'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='children'>
+<retval declared_type='IGXMLNodeSet*' type='@'/>
+</method>
+<method selector='count'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='createNewLogFile'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method class_method='true' selector='ddLogLevel'>
+<retval declared_type='int' type='i'/>
+</method>
+<method class_method='true' selector='ddSetLogLevel:'>
+<arg declared_type='int' index='0' name='logLevel' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didAddLogger'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didAddToLogger:'>
+<arg declared_type='id' index='0' name='logger' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didArchiveLogFile:'>
+<arg declared_type='NSString*' index='0' name='logFilePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRollAndArchiveLogFile:'>
+<arg declared_type='NSString*' index='0' name='logFilePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='empty'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='enumerateNodesUsingBlock:'>
+<arg declared_type='IGXMLNodeSetEnumerateBlock' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='IGXMLNode*' type='@'/>
+<arg declared_type='NSUInteger' type='I' type64='Q'/>
+<arg declared_type='BOOL*' type='^B'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='firstChild'>
+<retval declared_type='IGXMLNode*' type='@'/>
+</method>
+<method selector='firstObject'>
+<retval declared_type='IGXMLNode*' type='@'/>
+</method>
+<method selector='flush'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='formatLogMessage:'>
+<arg declared_type='DDLogMessage*' index='0' name='logMessage' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='initWithSyntaxTree:'>
+<arg declared_type='CPSyntaxTree*' index='0' name='syntaxTree' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='innerXml'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='isEOFToken'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isErrorToken'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isGrammarSymbol'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isIdentifierToken'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isItem'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isKeywordToken'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isLR1Item'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isNumberToken'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isQuotedToken'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isRHSItem'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isRHSItemResult'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isRule'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isShiftReduceAction'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isSyntaxTree'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isToken'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isTokenStream'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='isWhiteSpaceToken'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='lastError'>
+<retval declared_type='NSError*' type='@'/>
+</method>
+<method selector='logFormatter'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='logMessage:'>
+<arg declared_type='DDLogMessage*' index='0' name='logMessage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='loggerName'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='loggerQueue'>
+<retval declared_type='dispatch_queue_t' type='@'/>
+</method>
+<method selector='logsDirectory'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='maximumNumberOfLogFiles'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='nextSibling'>
+<retval declared_type='IGXMLNode*' type='@'/>
+</method>
+<method selector='nodes'>
+<retval declared_type='NSOrderedSet*' type='@'/>
+</method>
+<method selector='objectForKeyedSubscript:'>
+<arg declared_type='id' index='0' name='key' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='parent'>
+<retval declared_type='IGXMLNode*' type='@'/>
+</method>
+<method selector='parser:didEncounterErrorOnInput:'>
+<arg declared_type='CPParser*' index='0' name='parser' type='@'/>
+<arg declared_type='CPTokenStream*' index='1' name='inputStream' type='@'/>
+<retval declared_type='CPRecoveryAction*' type='@'/>
+</method>
+<method selector='parser:didEncounterErrorOnInput:expecting:'>
+<arg declared_type='CPParser*' index='0' name='parser' type='@'/>
+<arg declared_type='CPTokenStream*' index='1' name='inputStream' type='@'/>
+<arg declared_type='NSSet*' index='2' name='acceptableTokens' type='@'/>
+<retval declared_type='CPRecoveryAction*' type='@'/>
+</method>
+<method selector='parser:didProduceSyntaxTree:'>
+<arg declared_type='CPParser*' index='0' name='parser' type='@'/>
+<arg declared_type='CPSyntaxTree*' index='1' name='syntaxTree' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='prependWithNode:'>
+<arg declared_type='IGXMLNode*' index='0' name='child' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='prependWithXMLString:'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='previousSibling'>
+<retval declared_type='IGXMLNode*' type='@'/>
+</method>
+<method selector='queryWithCSS:'>
+<arg declared_type='NSString*' index='0' name='cssSelector' type='@'/>
+<retval declared_type='IGXMLNodeSet*' type='@'/>
+</method>
+<method selector='queryWithXPath:'>
+<arg declared_type='NSString*' index='0' name='xpath' type='@'/>
+<retval declared_type='IGXMLNodeSet*' type='@'/>
+</method>
+<method selector='recogniseTokenInString:currentTokenPosition:'>
+<arg declared_type='NSString*' index='0' name='tokenString' type='@'/>
+<arg declared_type='NSUInteger*' index='1' name='tokenPosition' type='^I' type64='^Q'/>
+<retval declared_type='CPToken*' type='@'/>
+</method>
+<method selector='remove'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeAttribute:'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeAttribute:inNamespace:'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<arg declared_type='NSString*' index='1' name='ns' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeNamespaces'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='requestBySerializingRequest:withParameters:error:'>
+<arg declared_type='NSURLRequest*' index='0' name='request' type='@'/>
+<arg declared_type='id' index='1' name='parameters' type='@'/>
+<arg declared_type='NSError**' index='2' name='error' type='^@'/>
+<retval declared_type='NSURLRequest*' type='@'/>
+</method>
+<method selector='responseObjectForResponse:data:error:'>
+<arg declared_type='NSURLResponse*' index='0' name='response' type='@'/>
+<arg declared_type='NSData*' index='1' name='data' type='@'/>
+<arg declared_type='NSError**' index='2' name='error' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setAttribute:inNamespace:value:'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<arg declared_type='NSString*' index='1' name='ns' type='@'/>
+<arg declared_type='NSString*' index='2' name='value' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAttribute:value:'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<arg declared_type='NSString*' index='1' name='value' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setLogFormatter:'>
+<arg declared_type='id' index='0' name='formatter' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMaximumNumberOfLogFiles:'>
+<arg declared_type='NSUInteger' index='0' name='maximumNumberOfLogFiles' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setObject:forKeyedSubscript:'>
+<arg declared_type='id' index='0' name='obj' type='@'/>
+<arg declared_type='id' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTag:'>
+<arg declared_type='NSString*' index='0' name='tag' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setText:'>
+<arg declared_type='NSString*' index='0' name='text' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='sortedLogFileInfos'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='sortedLogFileNames'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='sortedLogFilePaths'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='tag'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='text'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='throttleBandwidthWithPacketSize:delay:'>
+<arg declared_type='NSUInteger' index='0' name='numberOfBytes' type='I' type64='Q'/>
+<arg declared_type='NSTimeInterval' index='1' name='delay' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tokeniser:didNotFindTokenOnInput:position:error:'>
+<arg declared_type='CPTokeniser*' index='0' name='tokeniser' type='@'/>
+<arg declared_type='NSString*' index='1' name='input' type='@'/>
+<arg declared_type='NSUInteger' index='2' name='position' type='I' type64='Q'/>
+<arg declared_type='NSString**' index='3' name='errorMessage' type='^@'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='tokeniser:requestsToken:pushedOntoStream:'>
+<arg declared_type='CPTokeniser*' index='0' name='tokeniser' type='@'/>
+<arg declared_type='CPToken*' index='1' name='token' type='@'/>
+<arg declared_type='CPTokenStream*' index='2' name='stream' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tokeniser:shouldConsumeToken:'>
+<arg declared_type='CPTokeniser*' index='0' name='tokeniser' type='@'/>
+<arg declared_type='CPToken*' index='1' name='token' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='tokeniser:willProduceToken:'>
+<arg declared_type='CPTokeniser*' index='0' name='tokeniser' type='@'/>
+<arg declared_type='CPToken*' index='1' name='token' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='uniqueKey'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='unsortedLogFileInfos'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='unsortedLogFileNames'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='unsortedLogFilePaths'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='willRemoveFromLogger:'>
+<arg declared_type='id' index='0' name='logger' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='willRemoveLogger'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='xml'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+<class name='NSSet'>
+<method selector='cp_map:'>
+<arg declared_type='id (^)(id)' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='id' type='@'/>
+<retval declared_type='id' type='@'/>
+</arg>
+<retval declared_type='NSSet*' type='@'/>
+</method>
+</class>
+<informal_protocol name='AFMultipartFormData'>
+<method selector='appendPartWithFileData:name:fileName:mimeType:' type='v24@0:4@8@12@16@20' type64='v48@0:8@16@24@32@40'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<arg declared_type='NSString*' index='2' name='fileName' type='@'/>
+<arg declared_type='NSString*' index='3' name='mimeType' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='appendPartWithFileURL:name:error:' type='B20@0:4@8@12^@16' type64='B40@0:8@16@24^@32'>
+<arg declared_type='NSURL*' index='0' name='fileURL' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<arg declared_type='NSError**' index='2' name='error' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='appendPartWithFileURL:name:fileName:mimeType:error:' type='B28@0:4@8@12@16@20^@24' type64='B56@0:8@16@24@32@40^@48'>
+<arg declared_type='NSURL*' index='0' name='fileURL' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<arg declared_type='NSString*' index='2' name='fileName' type='@'/>
+<arg declared_type='NSString*' index='3' name='mimeType' type='@'/>
+<arg declared_type='NSError**' index='4' name='error' type='^@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='appendPartWithFormData:name:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='appendPartWithHeaders:body:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSDictionary*' index='0' name='headers' type='@'/>
+<arg declared_type='NSData*' index='1' name='body' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='appendPartWithInputStream:name:fileName:length:mimeType:' type='v32@0:4@8@12@16q20@28' type64='v56@0:8@16@24@32q40@48'>
+<arg declared_type='NSInputStream*' index='0' name='inputStream' type='@'/>
+<arg declared_type='NSString*' index='1' name='name' type='@'/>
+<arg declared_type='NSString*' index='2' name='fileName' type='@'/>
+<arg declared_type='int64_t' index='3' name='length' type='q'/>
+<arg declared_type='NSString*' index='4' name='mimeType' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='throttleBandwidthWithPacketSize:delay:' type='v20@0:4I8d12' type64='v32@0:8Q16d24'>
+<arg declared_type='NSUInteger' index='0' name='numberOfBytes' type='I' type64='Q'/>
+<arg declared_type='NSTimeInterval' index='1' name='delay' type='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='AFURLRequestSerialization'>
+<method selector='requestBySerializingRequest:withParameters:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='NSURLRequest*' index='0' name='request' type='@'/>
+<arg declared_type='id' index='1' name='parameters' type='@'/>
+<arg declared_type='NSError**' index='2' name='error' type='^@'/>
+<retval declared_type='NSURLRequest*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='AFURLResponseSerialization'>
+<method selector='responseObjectForResponse:data:error:' type='@20@0:4@8@12^@16' type64='@40@0:8@16@24^@32'>
+<arg declared_type='NSURLResponse*' index='0' name='response' type='@'/>
+<arg declared_type='NSData*' index='1' name='data' type='@'/>
+<arg declared_type='NSError**' index='2' name='error' type='^@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPErrorToken'>
+<method selector='isErrorToken' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPGrammarSymbol'>
+<method selector='isGrammarSymbol' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsEOFToken'>
+<method selector='isEOFToken' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsIdentifierToken'>
+<method selector='isIdentifierToken' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsItem'>
+<method selector='isItem' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsKeywordToken'>
+<method selector='isKeywordToken' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsLR1Item'>
+<method selector='isLR1Item' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsNumberToken'>
+<method selector='isNumberToken' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsQuotedToken'>
+<method selector='isQuotedToken' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsRHSItem'>
+<method selector='isRHSItem' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsRHSItemResult'>
+<method selector='isRHSItemResult' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsRule'>
+<method selector='isRule' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsShiftReduceAction'>
+<method selector='isShiftReduceAction' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsSyntaxTree'>
+<method selector='isSyntaxTree' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsToken'>
+<method selector='isToken' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsTokenStream'>
+<method selector='isTokenStream' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPIsWhiteSpaceToken'>
+<method selector='isWhiteSpaceToken' type='B8@0:4' type64='B16@0:8'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPParseResult'>
+<method selector='initWithSyntaxTree:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='CPSyntaxTree*' index='0' name='syntaxTree' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPParserDelegate'>
+<method selector='parser:didEncounterErrorOnInput:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='CPParser*' index='0' name='parser' type='@'/>
+<arg declared_type='CPTokenStream*' index='1' name='inputStream' type='@'/>
+<retval declared_type='CPRecoveryAction*' type='@'/>
+</method>
+<method selector='parser:didEncounterErrorOnInput:expecting:' type='@20@0:4@8@12@16' type64='@40@0:8@16@24@32'>
+<arg declared_type='CPParser*' index='0' name='parser' type='@'/>
+<arg declared_type='CPTokenStream*' index='1' name='inputStream' type='@'/>
+<arg declared_type='NSSet*' index='2' name='acceptableTokens' type='@'/>
+<retval declared_type='CPRecoveryAction*' type='@'/>
+</method>
+<method selector='parser:didProduceSyntaxTree:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='CPParser*' index='0' name='parser' type='@'/>
+<arg declared_type='CPSyntaxTree*' index='1' name='syntaxTree' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPTokenRecogniser'>
+<method selector='recogniseTokenInString:currentTokenPosition:' type='@16@0:4@8^I12' type64='@32@0:8@16^Q24'>
+<arg declared_type='NSString*' index='0' name='tokenString' type='@'/>
+<arg declared_type='NSUInteger*' index='1' name='tokenPosition' type='^I' type64='^Q'/>
+<retval declared_type='CPToken*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CPTokeniserDelegate'>
+<method selector='tokeniser:didNotFindTokenOnInput:position:error:' type='I24@0:4@8@12I16^@20' type64='Q48@0:8@16@24Q32^@40'>
+<arg declared_type='CPTokeniser*' index='0' name='tokeniser' type='@'/>
+<arg declared_type='NSString*' index='1' name='input' type='@'/>
+<arg declared_type='NSUInteger' index='2' name='position' type='I' type64='Q'/>
+<arg declared_type='NSString**' index='3' name='errorMessage' type='^@'/>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='tokeniser:requestsToken:pushedOntoStream:' type='v20@0:4@8@12@16' type64='v40@0:8@16@24@32'>
+<arg declared_type='CPTokeniser*' index='0' name='tokeniser' type='@'/>
+<arg declared_type='CPToken*' index='1' name='token' type='@'/>
+<arg declared_type='CPTokenStream*' index='2' name='stream' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tokeniser:shouldConsumeToken:' type='B16@0:4@8@12' type64='B32@0:8@16@24'>
+<arg declared_type='CPTokeniser*' index='0' name='tokeniser' type='@'/>
+<arg declared_type='CPToken*' index='1' name='token' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='tokeniser:willProduceToken:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='CPTokeniser*' index='0' name='tokeniser' type='@'/>
+<arg declared_type='CPToken*' index='1' name='token' type='@'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='DDLogFileManager'>
+<method selector='createNewLogFile' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='didArchiveLogFile:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='logFilePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='didRollAndArchiveLogFile:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='logFilePath' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='logsDirectory' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='maximumNumberOfLogFiles' type='I8@0:4' type64='Q16@0:8'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='setMaximumNumberOfLogFiles:' type='v12@0:4I8' type64='v24@0:8Q16'>
+<arg declared_type='NSUInteger' index='0' name='maximumNumberOfLogFiles' type='I' type64='Q'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='sortedLogFileInfos' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='sortedLogFileNames' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='sortedLogFilePaths' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='unsortedLogFileInfos' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='unsortedLogFileNames' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='unsortedLogFilePaths' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='DDLogFormatter'>
+<method selector='didAddToLogger:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='id' index='0' name='logger' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='formatLogMessage:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='DDLogMessage*' index='0' name='logMessage' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='willRemoveFromLogger:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='id' index='0' name='logger' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='DDLogger'>
+<method selector='didAddLogger' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='flush' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='logFormatter' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='logMessage:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='DDLogMessage*' index='0' name='logMessage' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='loggerName' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='loggerQueue' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='dispatch_queue_t' type='@'/>
+</method>
+<method selector='setLogFormatter:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='id' index='0' name='formatter' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='willRemoveLogger' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='DDRegisteredDynamicLogging'>
+<method class_method='true' selector='ddLogLevel' type='i8@0:4' type64='i16@0:8'>
+<retval declared_type='int' type='i'/>
+</method>
+<method class_method='true' selector='ddSetLogLevel:' type='v12@0:4i8' type64='v20@0:8i16'>
+<arg declared_type='int' index='0' name='logLevel' type='i'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IGXMLNodeAttribute'>
+<method selector='attribute:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='attribute:inNamespace:' type='@16@0:4@8@12' type64='@32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<arg declared_type='NSString*' index='1' name='ns' type='@'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='attributeNames' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='objectForKeyedSubscript:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='id' index='0' name='key' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='removeAttribute:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='removeAttribute:inNamespace:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<arg declared_type='NSString*' index='1' name='ns' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAttribute:inNamespace:value:' type='v20@0:4@8@12@16' type64='v40@0:8@16@24@32'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<arg declared_type='NSString*' index='1' name='ns' type='@'/>
+<arg declared_type='NSString*' index='2' name='value' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setAttribute:value:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='NSString*' index='0' name='attName' type='@'/>
+<arg declared_type='NSString*' index='1' name='value' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setObject:forKeyedSubscript:' type='v16@0:4@8@12' type64='v32@0:8@16@24'>
+<arg declared_type='id' index='0' name='obj' type='@'/>
+<arg declared_type='id' index='1' name='key' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IGXMLNodeCore'>
+<method selector='innerXml' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='lastError' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSError*' type='@'/>
+</method>
+<method selector='removeNamespaces' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setTag:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='tag' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setText:' type='v12@0:4@8' type64='v24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='text' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tag' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='text' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='xml' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IGXMLNodeManipulation'>
+<method selector='addChildWithNode:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='IGXMLNode*' index='0' name='child' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addChildWithXMLString:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addNextSiblingWithNode:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='IGXMLNode*' index='0' name='child' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addNextSiblingWithXMLString:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addPreviousSiblingWithNode:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='IGXMLNode*' index='0' name='child' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='addPreviousSiblingWithXMLString:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='appendWithNode:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='IGXMLNode*' index='0' name='child' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='appendWithXMLString:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='empty' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='prependWithNode:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='IGXMLNode*' index='0' name='child' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='prependWithXMLString:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='xmlString' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='remove' type='v8@0:4' type64='v16@0:8'>
+<retval declared_type='void' type='v'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IGXMLNodeQuery'>
+<method selector='queryWithCSS:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='cssSelector' type='@'/>
+<retval declared_type='IGXMLNodeSet*' type='@'/>
+</method>
+<method selector='queryWithXPath:' type='@12@0:4@8' type64='@24@0:8@16'>
+<arg declared_type='NSString*' index='0' name='xpath' type='@'/>
+<retval declared_type='IGXMLNodeSet*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IGXMLNodeSetCore'>
+<method selector='allObjects' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='count' type='I8@0:4' type64='Q16@0:8'>
+<retval declared_type='NSUInteger' type='I' type64='Q'/>
+</method>
+<method selector='enumerateNodesUsingBlock:' type='v12@0:4@?8' type64='v24@0:8@?16'>
+<arg declared_type='IGXMLNodeSetEnumerateBlock' function_pointer='true' index='0' name='block' type='@?'>
+<arg declared_type='IGXMLNode*' type='@'/>
+<arg declared_type='NSUInteger' type='I' type64='Q'/>
+<arg declared_type='BOOL*' type='^B'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='firstObject' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='IGXMLNode*' type='@'/>
+</method>
+<method selector='nodes' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSOrderedSet*' type='@'/>
+</method>
+</informal_protocol>
+<informal_protocol name='IGXMLNodeTraversal'>
+<method selector='children' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='IGXMLNodeSet*' type='@'/>
+</method>
+<method selector='firstChild' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='IGXMLNode*' type='@'/>
+</method>
+<method selector='nextSibling' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='IGXMLNode*' type='@'/>
+</method>
+<method selector='parent' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='IGXMLNode*' type='@'/>
+</method>
+<method selector='previousSibling' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='IGXMLNode*' type='@'/>
+</method>
+<method selector='uniqueKey' type='@8@0:4' type64='@16@0:8'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</informal_protocol>
+</signatures>

@@ -1,0 +1,47 @@
+PODS:
+  - AFNetworking (2.1.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.1.0):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.1.0)
+  - AFNetworking/Security (2.1.0)
+  - AFNetworking/Serialization (2.1.0)
+  - CocoaLumberjack (1.8.1):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.8.1)
+  - CocoaLumberjack/Extensions (1.8.1):
+    - CocoaLumberjack/Core
+  - CSSSelectorConverter (1.1.0):
+    - CocoaLumberjack (>= 1.6.4)
+    - CSSSelectorConverter/Core
+    - CSSSelectorConverter/CoreParse
+  - CSSSelectorConverter/Core (1.1.0):
+    - CocoaLumberjack (>= 1.6.4)
+    - CSSSelectorConverter/CoreParse
+  - CSSSelectorConverter/CoreParse (1.1.0):
+    - CocoaLumberjack (>= 1.6.4)
+  - IGHTMLQuery (0.7.2):
+    - IGHTMLQuery/Core
+  - IGHTMLQuery/Core (0.7.2):
+    - CSSSelectorConverter (>= 1.1.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.1.0)
+  - IGHTMLQuery (~> 0.7.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
+  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+  CSSSelectorConverter: ebb22e71e71f141361ad6fd10ed45ae2acfcb6da
+  IGHTMLQuery: eb4607a6837252d929c10900fdf3c55a8775fe8e
+
+COCOAPODS: 0.32.1

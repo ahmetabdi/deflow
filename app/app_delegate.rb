@@ -11,24 +11,50 @@ class AppDelegate
     @status_item.setHighlightMode(true)
     @status_item.setTitle('Test')
 
-    @status_menu.addItem createMenuItem('Force new wallpaper', 'force')
+    @status_menu.addItem createMenuItem('Force new wallpaper', 'getWallpaper')
+
+    NSScreen.screens.each_with_index do |screen, index|
+      @status_menu.addItem createMenuItem("Use screen #{index}", 'test')
+    end
     @status_menu.addItem createMenuItem('Quit', 'terminate:')
 
-    # path = NSURL.fileURLWithPath (NSBundle.mainBundle.pathForResource("123", ofType:"jpg"))
+    @config = NSUserDefaults.standardUserDefaults
+    @config['current_image'] = "#{random}.png"
 
-    # NSWorkspace.sharedWorkspace.setDesktopImageURL(path, forScreen: NSScreen.screens.lastObject, options: nil, error: nil)
+    NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: 'timerGo', userInfo: nil, repeats: true)
+  end
 
+  def random
+    range = [*'0'..'9', *'a'..'z', *'A'..'Z']
+    return Array.new(8){range.sample}.join
+  end
+
+  def timerGo
     createStorageFolder
-    saveImage("https://www.google.co.uk/logos/doodles/2014/dorothy-hodgkins-104th-birthday-born-1910-5134139112030208.3-hp.jpg")
     deleteAllFiles
+    getWallpaper
+  end
+
+  def getWallpaper
+    AFMotion::HTTP.get("http://wall.alphacoders.com/api1.0/get.php?auth=23a6f2db69037bdf11a989b02b9c43e3&page=2") do |result|
+      random = Random.new
+      result_data = BW::JSON.parse("#{result.body}")
+      image_url = result_data["wallpapers"][random.rand(0..25)]['url']
+      saveImage(image_url)
+    end
+  end
+
+  def setWallpaper
+    directory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).first
+    directory = directory.stringByAppendingPathComponent("deflow")
+    path = NSURL.fileURLWithPath(directory.stringByAppendingPathComponent(NSString.stringWithFormat("%@", @config['current_image'])))
+    EM.schedule_on_main do
+      NSWorkspace.sharedWorkspace.setDesktopImageURL(path, forScreen: NSScreen.screens.lastObject, options: nil, error: nil)
+    end
   end
 
   def createMenuItem(name, action)
     NSMenuItem.alloc.initWithTitle(name, action: action, keyEquivalent: '')
-  end
-
-  def force
-    # Force push a new wallpaper
   end
 
   def toggle(object)
@@ -39,35 +65,44 @@ class AppDelegate
   def createStorageFolder
     docDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).first
 
-    directory = docDir.stringByAppendingPathComponent("Deflow")
+    directory = docDir.stringByAppendingPathComponent("deflow")
 
     fileManager = NSFileManager.defaultManager
-    if(!fileManager.createDirectoryAtPath(directory, withIntermediateDirectories:true, attributes: nil, error: nil))
-      NSLog("Error: Create folder failed: %@", directory)
+
+    fileExists = fileManager.fileExistsAtPath(directory)
+    if (fileExists)
+        NSLog("Folder already exists...")
     else
-      NSLog("Successfully created folder: %@", directory)
+      if(!fileManager.createDirectoryAtPath(directory, withIntermediateDirectories:true, attributes: nil, error: nil))
+        NSLog("Error: Create folder failed: %@", directory)
+      else
+        NSLog("Successfully created folder: %@", directory)
+      end
     end
   end
 
   def saveImage(imgURL)
-    documentsDirectoryPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).first
-    imgName = "Deflow/image.png"
+    directory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).first
+    directory = directory.stringByAppendingPathComponent("deflow")
+    @config['current_image'] = "#{random}.png"
+    imgName = @config['current_image']
     fileManager = NSFileManager.defaultManager
-    writablePath = documentsDirectoryPath.stringByAppendingPathComponent(imgName)
+    writablePath = directory.stringByAppendingPathComponent(imgName)
 
     if(!fileManager.fileExistsAtPath(writablePath))
-        NSLog("%@ doesn't exist creating...", imgName);
         data = NSData.dataWithContentsOfURL(NSURL.URLWithString(imgURL))
 
         error = nil
-        data.writeToFile(documentsDirectoryPath.stringByAppendingPathComponent(
+        data.writeToFile(directory.stringByAppendingPathComponent(
                                     NSString.stringWithFormat("%@", imgName)),
                                     options:NSAtomicWrite, error: error)
+        puts directory.stringByAppendingPathComponent(NSString.stringWithFormat("%@", imgName))
 
       if (error)
-        NSLog("Error Writing File: %@", error);
+        NSLog("Error Writing File: %@", error)
       else
-        NSLog("%@ Saved SuccessFully", imgName);
+        NSLog("%@ Saved SuccessFully", imgName)
+        setWallpaper
       end
     else
       NSLog("%@ already exists skipping...", imgName)
@@ -78,7 +113,7 @@ class AppDelegate
     fm = NSFileManager.defaultManager
 
     directory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).first
-    directory = directory.stringByAppendingPathComponent("Deflow")
+    directory = directory.stringByAppendingPathComponent("deflow")
     fm.contentsOfDirectoryAtPath(directory, error: nil).each do |file|
         success = fm.removeItemAtPath(NSString.stringWithFormat("%@/%@", directory, file), error: nil)
         if !success

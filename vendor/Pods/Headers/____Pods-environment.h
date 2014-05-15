@@ -1,0 +1,92 @@
+
+// To check if a library is compiled with CocoaPods you
+// can use the `COCOAPODS` macro definition which is
+// defined in the xcconfigs so it is available in
+// headers also when they are imported in the client
+// project.
+
+
+// AFNetworking
+#define COCOAPODS_POD_AVAILABLE_AFNetworking
+#define COCOAPODS_VERSION_MAJOR_AFNetworking 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking 1
+#define COCOAPODS_VERSION_PATCH_AFNetworking 0
+
+// AFNetworking/NSURLConnection
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_NSURLConnection
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLConnection 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_NSURLConnection 1
+#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLConnection 0
+
+// AFNetworking/NSURLSession
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_NSURLSession
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLSession 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_NSURLSession 1
+#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLSession 0
+
+// AFNetworking/Reachability
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_Reachability
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_Reachability 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_Reachability 1
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Reachability 0
+
+// AFNetworking/Security
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_Security
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_Security 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_Security 1
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Security 0
+
+// AFNetworking/Serialization
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_Serialization
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_Serialization 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_Serialization 1
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Serialization 0
+
+// CSSSelectorConverter
+#define COCOAPODS_POD_AVAILABLE_CSSSelectorConverter
+#define COCOAPODS_VERSION_MAJOR_CSSSelectorConverter 1
+#define COCOAPODS_VERSION_MINOR_CSSSelectorConverter 1
+#define COCOAPODS_VERSION_PATCH_CSSSelectorConverter 0
+
+// CSSSelectorConverter/Core
+#define COCOAPODS_POD_AVAILABLE_CSSSelectorConverter_Core
+#define COCOAPODS_VERSION_MAJOR_CSSSelectorConverter_Core 1
+#define COCOAPODS_VERSION_MINOR_CSSSelectorConverter_Core 1
+#define COCOAPODS_VERSION_PATCH_CSSSelectorConverter_Core 0
+
+// CSSSelectorConverter/CoreParse
+#define COCOAPODS_POD_AVAILABLE_CSSSelectorConverter_CoreParse
+#define COCOAPODS_VERSION_MAJOR_CSSSelectorConverter_CoreParse 1
+#define COCOAPODS_VERSION_MINOR_CSSSelectorConverter_CoreParse 1
+#define COCOAPODS_VERSION_PATCH_CSSSelectorConverter_CoreParse 0
+
+// CocoaLumberjack
+#define COCOAPODS_POD_AVAILABLE_CocoaLumberjack
+#define COCOAPODS_VERSION_MAJOR_CocoaLumberjack 1
+#define COCOAPODS_VERSION_MINOR_CocoaLumberjack 8
+#define COCOAPODS_VERSION_PATCH_CocoaLumberjack 1
+
+// CocoaLumberjack/Core
+#define COCOAPODS_POD_AVAILABLE_CocoaLumberjack_Core
+#define COCOAPODS_VERSION_MAJOR_CocoaLumberjack_Core 1
+#define COCOAPODS_VERSION_MINOR_CocoaLumberjack_Core 8
+#define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Core 1
+
+// CocoaLumberjack/Extensions
+#define COCOAPODS_POD_AVAILABLE_CocoaLumberjack_Extensions
+#define COCOAPODS_VERSION_MAJOR_CocoaLumberjack_Extensions 1
+#define COCOAPODS_VERSION_MINOR_CocoaLumberjack_Extensions 8
+#define COCOAPODS_VERSION_PATCH_CocoaLumberjack_Extensions 1
+
+// IGHTMLQuery
+#define COCOAPODS_POD_AVAILABLE_IGHTMLQuery
+#define COCOAPODS_VERSION_MAJOR_IGHTMLQuery 0
+#define COCOAPODS_VERSION_MINOR_IGHTMLQuery 7
+#define COCOAPODS_VERSION_PATCH_IGHTMLQuery 2
+
+// IGHTMLQuery/Core
+#define COCOAPODS_POD_AVAILABLE_IGHTMLQuery_Core
+#define COCOAPODS_VERSION_MAJOR_IGHTMLQuery_Core 0
+#define COCOAPODS_VERSION_MINOR_IGHTMLQuery_Core 7
+#define COCOAPODS_VERSION_PATCH_IGHTMLQuery_Core 2
+

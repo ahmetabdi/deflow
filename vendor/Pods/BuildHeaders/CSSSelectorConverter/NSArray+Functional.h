@@ -1,0 +1,1 @@
+../../CSSSelectorConverter/vendor/CoreParse/CoreParse/NSArray+Functional.h
