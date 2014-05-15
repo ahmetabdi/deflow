@@ -20,4 +20,4 @@ Available for OS X v10.6 and later.
   
 # Thanks
 
-![alt tag](https://github.com/ahmetabdi/deflow/blob/master/resources/wallpaper_abyss.png)
+![alt tag](https://github.com/ahmetabdi/deflow/raw/master/resources/wallpaper_abyss.png)
