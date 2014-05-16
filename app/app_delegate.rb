@@ -1,27 +1,80 @@
 class AppDelegate
 
-  attr_accessor :status_menu
+  attr_accessor :menu
 
   def applicationDidFinishLaunching(notification)
     @app_name = NSBundle.mainBundle.infoDictionary['CFBundleDisplayName']
-    @status_menu = NSMenu.new
+    @menu = NSMenu.new
 
     @status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength).init
-    @status_item.setMenu(@status_menu)
+    @status_item.setMenu(@menu)
     @status_item.setHighlightMode(true)
     @status_item.setTitle('Deflow')
 
-    @status_menu.addItem createMenuItem('Force new wallpaper', 'getWallpaper')
-
-    NSScreen.screens.each_with_index do |screen, index|
-      @status_menu.addItem createMenuItem("Use screen #{index}", "setScreen:")
-    end
-    @status_menu.addItem createMenuItem('Quit', 'terminate:')
+    build_menu(@menu)
 
     @config = NSUserDefaults.standardUserDefaults
     @config['current_image'] ||= "#{random}.png"
+    @config['current_category'] ||= 32
 
     NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: 'timerGo', userInfo: nil, repeats: true)
+  end
+
+  def build_menu(menu)
+    menu.addItem createMenuItem('Force new wallpaper', 'getWallpaper')
+
+    menu.addItem NSMenuItem.separatorItem
+
+    build_submenu
+
+    menu.addItem NSMenuItem.separatorItem
+
+    menu.addItem createMenuItem('Preferenecs', 'test:')
+    menu.addItem createMenuItem('Quit', 'terminate:')
+  end
+
+  def build_submenu
+    sub_menu = NSMenu.new
+    another_sub_menu = NSMenu.new
+
+    mi = NSMenuItem.new
+    mi.title = 'Categories'
+    mi.setSubmenu(sub_menu)
+    @menu.addItem mi
+
+    Helper.categories.each do |k,v|
+      mi = NSMenuItem.new
+      mi.title = "#{k}"
+      mi.tag = v
+      mi.action = 'setCategory:'
+      sub_menu.addItem mi
+    end
+
+    mi = NSMenuItem.new
+    mi.title = 'Screen'
+    mi.setSubmenu(another_sub_menu)
+    @menu.addItem mi
+
+    NSScreen.screens.each_with_index do |screen, index|
+      mi = NSMenuItem.new
+      mi.title = "Screen: #{index}"
+      mi.tag = index
+      mi.action = 'setScreen:'
+      another_sub_menu.addItem mi
+    end
+
+  end
+
+  def setCategory(sender)
+    NSLog("#{sender.tag} - #{sender}")
+    @config['current_category'] = sender.tag
+    sender.setState NSOnState
+  end
+
+  def build_preferences(sender)
+    @preferences ||= PreferencesController.new
+    @preferences.window.makeKeyAndOrderFront(self)
+    App.shared.activateIgnoringOtherApps(true)
   end
 
   def setScreen(number)
@@ -41,7 +94,7 @@ class AppDelegate
 
   def getWallpaper
     random = Random.new
-    AFMotion::HTTP.get("http://wall.alphacoders.com/api1.0/get.php?auth=23a6f2db69037bdf11a989b02b9c43e3&page=#{random.rand(0..99)}&category_id=32") do |result|
+    AFMotion::HTTP.get("http://wall.alphacoders.com/api1.0/get.php?auth=23a6f2db69037bdf11a989b02b9c43e3&page=#{random.rand(0..99)}&category_id=#{@config['current_category']}") do |result|
       result_data = BW::JSON.parse("#{result.body}")
       image_url = result_data["wallpapers"][random.rand(0..25)]['url']
       saveImage(image_url)
