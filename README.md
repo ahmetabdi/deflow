@@ -20,6 +20,6 @@ Available for OS X v10.6 and later.
   
 ## Thanks
 
-'Powered By Wallpaper Abyss' link that links to http://wall.alphacoders.com
+[Powered By Wallpaper Abyss](http://wall.alphacoders.com)
 
 ![alt tag](https://github.com/ahmetabdi/deflow/raw/master/resources/wallpaper_abyss.png)
