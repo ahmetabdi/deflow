@@ -1,6 +1,8 @@
 class AppDelegate
 
   attr_accessor :menu
+  attr_accessor :categories_menu
+  attr_accessor :screen_menu
 
   def applicationDidFinishLaunching(notification)
     @app_name = NSBundle.mainBundle.infoDictionary['CFBundleDisplayName']
@@ -13,33 +15,40 @@ class AppDelegate
 
     build_menu(@menu)
 
-    @config = NSUserDefaults.standardUserDefaults
-    @config['current_image'] ||= "#{random}.png"
-    @config['current_category'] ||= 32
+    config
 
     NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: 'timerGo', userInfo: nil, repeats: true)
   end
 
+  def config
+    @config = NSUserDefaults.standardUserDefaults
+    @config['current_image'] ||= "#{random}.png"
+    @config['current_category'] ||= 32
+    @config['current_screen'] ||= 0
+
+    @categories_menu.itemArray.each do |item|
+      item.setState NSOnState if item.tag == @config['current_category']
+    end
+  end
+
   def build_menu(menu)
     menu.addItem createMenuItem('Force new wallpaper', 'getWallpaper')
-
+    ##########################################
     menu.addItem NSMenuItem.separatorItem
-
     build_submenu
-
     menu.addItem NSMenuItem.separatorItem
-
+    ##########################################
     menu.addItem createMenuItem('Preferenecs', 'test:')
     menu.addItem createMenuItem('Quit', 'terminate:')
   end
 
   def build_submenu
-    sub_menu = NSMenu.new
-    another_sub_menu = NSMenu.new
+    @categories_menu = NSMenu.new
+    @screen_menu = NSMenu.new
 
     mi = NSMenuItem.new
     mi.title = 'Categories'
-    mi.setSubmenu(sub_menu)
+    mi.setSubmenu(@categories_menu)
     @menu.addItem mi
 
     Helper.categories.each do |k,v|
@@ -47,12 +56,12 @@ class AppDelegate
       mi.title = "#{k}"
       mi.tag = v
       mi.action = 'setCategory:'
-      sub_menu.addItem mi
+      @categories_menu.addItem mi
     end
 
     mi = NSMenuItem.new
     mi.title = 'Screen'
-    mi.setSubmenu(another_sub_menu)
+    mi.setSubmenu(@screen_menu)
     @menu.addItem mi
 
     NSScreen.screens.each_with_index do |screen, index|
@@ -60,14 +69,16 @@ class AppDelegate
       mi.title = "Screen: #{index}"
       mi.tag = index
       mi.action = 'setScreen:'
-      another_sub_menu.addItem mi
+      @screen_menu.addItem mi
     end
-
   end
 
   def setCategory(sender)
     NSLog("#{sender.tag} - #{sender}")
     @config['current_category'] = sender.tag
+    @categories_menu.itemArray.each do |ns_menu_item|
+      ns_menu_item.setState NSOffState
+    end
     sender.setState NSOnState
   end
 
@@ -94,10 +105,14 @@ class AppDelegate
 
   def getWallpaper
     random = Random.new
-    AFMotion::HTTP.get("http://wall.alphacoders.com/api1.0/get.php?auth=23a6f2db69037bdf11a989b02b9c43e3&page=#{random.rand(0..99)}&category_id=#{@config['current_category']}") do |result|
-      result_data = BW::JSON.parse("#{result.body}")
-      image_url = result_data["wallpapers"][random.rand(0..25)]['url']
-      saveImage(image_url)
+    AFMotion::HTTP.get("http://wall.alphacoders.com/api1.0/get.php?auth=23a6f2db69037bdf11a989b02b9c43e3&page=#{random.rand(0..20)}&category_id=#{@config['current_category']}") do |result|
+      begin
+        result_data = BW::JSON.parse("#{result.body}")
+        image_url = result_data["wallpapers"][random.rand(0..25)]['url']
+        saveImage(image_url)
+      rescue Exception => e
+        puts e.message
+      end
     end
   end
 
@@ -127,12 +142,12 @@ class AppDelegate
 
     fileExists = fileManager.fileExistsAtPath(directory)
     if (fileExists)
-        NSLog("Folder already exists...")
+      # Folder already exists
     else
       if(!fileManager.createDirectoryAtPath(directory, withIntermediateDirectories:true, attributes: nil, error: nil))
-        NSLog("Error: Create folder failed: %@", directory)
+        # Create folder failed
       else
-        NSLog("Successfully created folder: %@", directory)
+        # Successfully created folder
       end
     end
   end
@@ -154,13 +169,13 @@ class AppDelegate
                                     options:NSAtomicWrite, error: error)
 
       if (error)
-        NSLog("Error Writing File: %@", error)
+        # Error Writing File
       else
-        NSLog("%@ Saved SuccessFully", imgName)
+        # Saved SuccessFully
         setWallpaper
       end
     else
-      NSLog("%@ already exists skipping...", imgName)
+      # File already exists skipping
     end
   end
 
@@ -171,9 +186,9 @@ class AppDelegate
     fm.contentsOfDirectoryAtPath(directory, error: nil).each do |file|
         success = fm.removeItemAtPath(NSString.stringWithFormat("%@/%@", directory, file), error: nil)
         if success
-          NSLog("Successfully deleted file: #{file}")
+          # Deleted file
         else
-          NSLog("Failed to delete file: #{file}")
+          # Failed to delete file
         end
     end
   end
