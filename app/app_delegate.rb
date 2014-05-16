@@ -29,6 +29,10 @@ class AppDelegate
     @categories_menu.itemArray.each do |item|
       item.setState NSOnState if item.tag == @config['current_category']
     end
+
+    @screen_menu.itemArray.each do |item|
+      item.setState NSOnState if item.tag == @config['current_screen']
+    end
   end
 
   def build_menu(menu)
@@ -76,8 +80,8 @@ class AppDelegate
   def setCategory(sender)
     NSLog("#{sender.tag} - #{sender}")
     @config['current_category'] = sender.tag
-    @categories_menu.itemArray.each do |ns_menu_item|
-      ns_menu_item.setState NSOffState
+    @categories_menu.itemArray.each do |item|
+      item.setState NSOffState
     end
     sender.setState NSOnState
   end
@@ -88,8 +92,12 @@ class AppDelegate
     App.shared.activateIgnoringOtherApps(true)
   end
 
-  def setScreen(number)
-    puts "Setting screen #{number}"
+  def setScreen(sender)
+    @config['current_screen'] = sender.tag
+    @screen_menu.itemArray.each do |item|
+      item.setState NSOffState
+    end
+    sender.setState NSOnState
   end
 
   def random
@@ -121,7 +129,9 @@ class AppDelegate
     directory = directory.stringByAppendingPathComponent("deflow")
     path = NSURL.fileURLWithPath(directory.stringByAppendingPathComponent(NSString.stringWithFormat("%@", @config['current_image'])))
     EM.schedule_on_main do
-      NSWorkspace.sharedWorkspace.setDesktopImageURL(path, forScreen: NSScreen.screens.lastObject, options: nil, error: nil)
+      NSWorkspace.sharedWorkspace.setDesktopImageURL(path, forScreen: NSScreen.screens[@config['current_screen']], options: nil, error: nil)
+      puts @config['current_screen']
+      puts NSScreen.screens[@config['current_screen']]
     end
   end
 
