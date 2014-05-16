@@ -14,7 +14,6 @@ class AppDelegate
     @status_item.setTitle('Deflow')
 
     build_menu(@menu)
-
     config
 
     NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: 'timerGo', userInfo: nil, repeats: true)
