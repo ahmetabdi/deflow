@@ -22,7 +22,7 @@ class AppDelegate
 
   def config
     @config = NSUserDefaults.standardUserDefaults
-    @config['current_image'] ||= "#{random}.png"
+    @config['current_image'] ||= "#{Helper.random}.png"
     @config['current_category'] ||= 32
     @config['current_screen'] ||= 0
 
@@ -78,7 +78,6 @@ class AppDelegate
   end
 
   def setCategory(sender)
-    NSLog("#{sender.tag} - #{sender}")
     @config['current_category'] = sender.tag
     @categories_menu.itemArray.each do |item|
       item.setState NSOffState
@@ -100,10 +99,6 @@ class AppDelegate
     sender.setState NSOnState
   end
 
-  def random
-    range = [*'0'..'9', *'a'..'z', *'A'..'Z']
-    return Array.new(8){range.sample}.join
-  end
 
   def timerGo
     createStorageFolder
@@ -130,8 +125,6 @@ class AppDelegate
     path = NSURL.fileURLWithPath(directory.stringByAppendingPathComponent(NSString.stringWithFormat("%@", @config['current_image'])))
     EM.schedule_on_main do
       NSWorkspace.sharedWorkspace.setDesktopImageURL(path, forScreen: NSScreen.screens[@config['current_screen']], options: nil, error: nil)
-      puts @config['current_screen']
-      puts NSScreen.screens[@config['current_screen']]
     end
   end
 
@@ -165,7 +158,7 @@ class AppDelegate
   def saveImage(imgURL)
     directory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).first
     directory = directory.stringByAppendingPathComponent("deflow")
-    @config['current_image'] = "#{random}.png"
+    @config['current_image'] = "#{Helper.random}.png"
     imgName = @config['current_image']
     fileManager = NSFileManager.defaultManager
     writablePath = directory.stringByAppendingPathComponent(imgName)

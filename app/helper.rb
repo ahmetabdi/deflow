@@ -1,5 +1,10 @@
 class Helper
 
+  def self.random
+    range = [*'0'..'9', *'a'..'z', *'A'..'Z']
+    return Array.new(8){range.sample}.join
+  end
+
   def self.categories
     { "Abstract" => 1,
       "Animal" => 2,
@@ -16,23 +21,23 @@ class Helper
       "Game" => 13,
       "Holiday" => 14,
       "Humor" => 15,
-      "Man made" => 16,
+      "Man Made" => 16,
       "Men" => 17,
       "Military" => 18,
       "Misc" => 19,
       "Movie" => 20,
-      "Multi monitor" => 21,
+      "Multi Monitor" => 21,
       "Music" => 22,
       "Pattern" => 23,
       "Photography" => 24,
       "Products" => 25,
       "Religious" => 26,
-      "Sci-fi" => 27,
+      "Sci-Fi" => 27,
       "Sports" => 28,
-      "Tv show" => 29,
+      "Tv Shows" => 29,
       "Technology" => 30,
       "Vehicles" => 31,
-      "Video game" => 32,
+      "Video Games" => 32,
       "Weapons" => 33,
       "Women" => 34,
     }
