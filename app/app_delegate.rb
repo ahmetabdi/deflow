@@ -11,8 +11,9 @@ class AppDelegate
     @status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength).init
     @status_item.setMenu(@menu)
     @status_item.setHighlightMode(true)
-    @status_item.setTitle('Deflow')
 
+    img = NSImage.imageNamed('status18x18')
+    @status_item.setImage(img)
     build_menu(@menu)
     config
 
