@@ -3,6 +3,8 @@ Deflow
 
 Automatically fetches new wallpapers for you.
 
+![alt tag](https://github.com/ahmetabdi/deflow/raw/master/resources/banner.jpg)
+
 Available for OS X v10.6 and later.
 
 * Selectable intervals
