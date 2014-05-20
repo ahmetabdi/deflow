@@ -3,9 +3,11 @@ Deflow
 
 Automatically fetches new wallpapers for you.
 
-![alt tag](https://github.com/ahmetabdi/deflow/raw/master/resources/banner.jpg)
+![alt tag](../master/resources/banner.jpg)
 
-Available for OS X v10.6 and later.
+Available for OS X v10.6 and later only.
+
+[DOWNLOAD HERE](https://github.com/ahmetabdi/deflow/releases)
 
 * Toggle wallpaper update intervals.
 * Choose which screen to push new wallpapers too.
@@ -23,4 +25,4 @@ Available for OS X v10.6 and later.
 
 [Powered By Wallpaper Abyss](http://wall.alphacoders.com)
 
-![alt tag](https://github.com/ahmetabdi/deflow/raw/master/resources/wallpaper_abyss.png)
+![alt tag](../master/resources/wallpaper_abyss.png)
