@@ -5,7 +5,9 @@ Automatically fetches new wallpapers for you.
 
 ![alt tag](../master/resources/banner.jpg)
 
-Available for OS X v10.6 and later.
+Available for OS X v10.6 and later only.
+
+[DOWNLOAD HERE](https://github.com/ahmetabdi/deflow/releases)
 
 * Toggle wallpaper update intervals.
 * Choose which screen to push new wallpapers too.
