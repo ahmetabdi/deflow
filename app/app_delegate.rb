@@ -36,14 +36,16 @@ class AppDelegate
   end
 
   def build_menu(menu)
+    # -------------------------------------------------------------------- #
     menu.addItem createMenuItem('Force new wallpaper', 'getWallpaper')
-    ##########################################
+    # -------------------------------------------------------------------- #
     menu.addItem NSMenuItem.separatorItem
     build_submenu
     menu.addItem NSMenuItem.separatorItem
-    ##########################################
+    # -------------------------------------------------------------------- #
     menu.addItem createMenuItem('Preferenecs', 'test:')
     menu.addItem createMenuItem('Quit', 'terminate:')
+    # -------------------------------------------------------------------- #
   end
 
   def build_submenu
@@ -145,12 +147,12 @@ class AppDelegate
 
     fileExists = fileManager.fileExistsAtPath(directory)
     if (fileExists)
-      # Folder already exists
+      NSLog("Folder already exists")
     else
       if(!fileManager.createDirectoryAtPath(directory, withIntermediateDirectories:true, attributes: nil, error: nil))
-        # Create folder failed
+        NSLog("Failed to create folder")
       else
-        # Successfully created folder
+        NSLog("Successfully created folder")
       end
     end
   end
@@ -172,13 +174,13 @@ class AppDelegate
                                     options:NSAtomicWrite, error: error)
 
       if (error)
-        # Error Writing File
+        NSLog("Error writing file")
       else
-        # Saved SuccessFully
+        NSLog("Saved Successfully")
         setWallpaper
       end
     else
-      # File already exists skipping
+      NSLog("File already exists, skipping...")
     end
   end
 
@@ -187,12 +189,12 @@ class AppDelegate
     directory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).first
     directory = directory.stringByAppendingPathComponent("deflow")
     fm.contentsOfDirectoryAtPath(directory, error: nil).each do |file|
-        success = fm.removeItemAtPath(NSString.stringWithFormat("%@/%@", directory, file), error: nil)
-        if success
-          # Deleted file
-        else
-          # Failed to delete file
-        end
+      success = fm.removeItemAtPath(NSString.stringWithFormat("%@/%@", directory, file), error: nil)
+      if success
+        NSLog("File deleted")
+      else
+        NSLog("Failed to delete")
+      end
     end
   end
 
