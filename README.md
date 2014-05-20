@@ -3,7 +3,7 @@ Deflow
 
 Automatically fetches new wallpapers for you.
 
-![alt tag](https://github.com/ahmetabdi/deflow/raw/master/resources/banner.jpg)
+![alt tag](../master/resources/banner.jpg)
 
 Available for OS X v10.6 and later.
 
@@ -23,4 +23,4 @@ Available for OS X v10.6 and later.
 
 [Powered By Wallpaper Abyss](http://wall.alphacoders.com)
 
-![alt tag](https://github.com/ahmetabdi/deflow/raw/master/resources/wallpaper_abyss.png)
+![alt tag](../master/resources/wallpaper_abyss.png)
